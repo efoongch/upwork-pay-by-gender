@@ -25,11 +25,11 @@ __email__ = 'eurekafoong2020@u.northwestern.edu'
 #logging.basicConfig()
 class UpworkQuerier: 
     def __init__(self):
-        
+        '''
         # Creating a log of what happened during session
         self.log = open('../json_files/log_upwork_data_collection_2017_10_18.txt', 'a')
         self.log.write("We have started collecting data")
-
+'''
         # Connect to the database 
         self.conn = psycopg2.connect("dbname=eureka01")
         self.cur = self.conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
@@ -58,10 +58,10 @@ class UpworkQuerier:
         self.data = {'q': 'united states', 'skills' : 'java'}
 
         # While we have collected fewer than 500 profiles, collect 40 profiles at a time and add that to a list
-        while offset < 80:
+        while self.offset < 80:
             print "Now about to take profiles at offset {0}".format(self.offset)
-            freelancers_on_page = client.provider_v2.search_providers(data=self.data, page_offset=self.offset, page_size=self.size_of_page)
-            on_workers(freelancers_on_page)
+            freelancers_on_page = self.client.provider_v2.search_providers(data=self.data, page_offset=self.offset, page_size=self.size_of_page)
+            self.on_workers(freelancers_on_page)
             self.offset += self.size_of_page
             print "Now about to sleep"
             time.sleep(61)
@@ -71,16 +71,17 @@ class UpworkQuerier:
             print record
 
     def on_workers(self, workers):
+
         # Load the json data each time we collect a page of 40 workers 
-        page_of_workers = json.loads(workers)
+       
 
         # Strip the list into individual workers, then save workers as different rows in our database
-        for worker in page_of_workers:
+        for worker in workers:
             try:
                 user_id = worker["id"]
                 first_name = worker["name"].split(' ', 1)[0]
                 self.cur.execute("INSERT INTO workers_as_json_2017_10_18 (user_id, first_name, worker) VALUES (%s, %s, %s);",
-                                [user_id, first_name, psycopg2.extras.Json(worker)]
+                                [user_id, first_name, psycopg2.extras.Json(worker)])
                 self.conn.commit()
                 #self.cur.execute("INSERT INTO tweet_as_json_2015_05_27 (id, created_at, uid, bb, geo, lat, lon, tweet) VALUES (%s,%s,%s,%s,%s,%s,%s, %s);",
                                  #[id, time.strftime("%Y-%m-%d %H:%M:%S",created_at), uid, bb, geo, lat, lon,
