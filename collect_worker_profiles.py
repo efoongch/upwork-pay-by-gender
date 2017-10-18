@@ -66,10 +66,6 @@ class UpworkQuerier:
             print "Now about to sleep"
             time.sleep(61)
 
-        cur.execute("SELECT * FROM workers_as_json_2017_10_18;")
-        for record in cur:
-            print record
-
     def on_workers(self, workers):
 
         # Load the json data each time we collect a page of 40 workers 
@@ -82,10 +78,12 @@ class UpworkQuerier:
                 first_name = worker["name"].split(' ', 1)[0]
                 self.cur.execute("INSERT INTO workers_as_json_2017_10_18 (user_id, first_name, worker) VALUES (%s, %s, %s);",
                                 [user_id, first_name, psycopg2.extras.Json(worker)])
-                self.conn.commit()
+                
                 #self.cur.execute("INSERT INTO tweet_as_json_2015_05_27 (id, created_at, uid, bb, geo, lat, lon, tweet) VALUES (%s,%s,%s,%s,%s,%s,%s, %s);",
                                  #[id, time.strftime("%Y-%m-%d %H:%M:%S",created_at), uid, bb, geo, lat, lon,
                                   #psycopg2.extras.Json(tweet)])
+            except psycopg2.IntegrityError:
+                self.conn.rollback()
 
             except Exception as err:
                 print(err)
@@ -95,6 +93,8 @@ class UpworkQuerier:
                 self.log.write("Failed to parse worker: " + user_id + "\n")
                 self.log.flush()
                 print "Failed to parse worker: " + user_id + "\n"
+            else:
+                self.conn.commit()
 
         '''
         # Start counting how many pages of workers we have added to the table
