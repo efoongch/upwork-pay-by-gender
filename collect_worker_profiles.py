@@ -77,10 +77,10 @@ class UpworkQuerier:
                 first_name = worker["name"].split(' ', 1)[0]
                 profile_photo = worker["portrait_50"]
                 # Call the API to return detailed info on each worker 
-                detailed_info = self.client.provider.get_provider("'" + user_id + "'")
+                self.detailed_info = self.client.provider.get_provider("'" + user_id + "'")
 
                 self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (user_id, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s. %s, %s);",
-                                [user_id, first_name, profile_photo, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
+                                [user_id, first_name, profile_photo, psycopg2.extras.Json(worker), psycopg2.extras.Json(self.detailed_info)])
 
             except psycopg2.IntegrityError:
                 self.conn.rollback()
@@ -89,7 +89,7 @@ class UpworkQuerier:
                 print(err)
                 # If something goes wrong, still save the worker data into the table
                 self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (worker) VALUES (%s);", [psycopg2.extras.Json(worker)])
-                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (detailed_info) VALUES (%s);", [psycopg2.extras.Json(detailed_info)])
+                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (detailed_info) VALUES (%s);", [psycopg2.extras.Json(self.detailed_info)])
                 self.log.write("Failed to parse worker: " + user_id + "\n")
                 self.log.flush()
                 print "Failed to parse worker: " + user_id + "\n"
