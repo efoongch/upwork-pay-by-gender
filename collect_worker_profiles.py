@@ -50,14 +50,14 @@ class UpworkQuerier:
         
     def collect_workers_basic_data(self): 
         # Control number of users you want to collect at once 
-        self.size_of_page = 40
+        self.size_of_page = 8
         self.offset = 0
 
         # Parameters for searching for freelancers
         self.data = {'q': 'a'}
 
         # While we have collected fewer than x profiles, collect 40 profiles at a time and add that to a list
-        while self.offset < 80:
+        while self.offset < 16:
             print "Now about to take profiles at offset {0}".format(self.offset)
             freelancers_on_page = self.client.provider_v2.search_providers(data=self.data, page_offset=self.offset, page_size=self.size_of_page)
             print "Now about to sleep before we collect detailed profile info"
@@ -79,8 +79,8 @@ class UpworkQuerier:
                 # Call the API to return detailed info on each worker 
                 detailed_info = self.client.provider.get_provider(user_id)
 
-                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (user_id, created_at, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s, %s. %s, %s);",
-                                [user_id, time.strftime("%Y-%m-%d %H:%M:%S",created_at), first_name, profile_photo, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
+                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (user_id, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s. %s, %s);",
+                                [user_id, first_name, profile_photo, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
 
             except psycopg2.IntegrityError:
                 self.conn.rollback()
