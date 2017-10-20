@@ -75,7 +75,7 @@ class UpworkQuerier:
             try:
                 user_id = worker["id"]
                 first_name = worker["name"].split(' ', 1)[0]
-                profile_photo = worker["portrait_50"]
+                profile_photo = "10"
                 # Call the API to return detailed info on each worker 
                 detailed_info = self.client.provider.get_provider(user_id)
                 self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (user_id, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s. %s, %s);",
@@ -87,7 +87,6 @@ class UpworkQuerier:
             except Exception as err:
                 print(err)
                 # If something goes wrong, still save the worker data into the table
-                detailed_info = self.client.provider.get_provider(user_id)
                 self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (worker) VALUES (%s);", [psycopg2.extras.Json(worker)])
                 self.log.write("Failed to parse worker: " + user_id + "\n")
                 self.log.flush()
