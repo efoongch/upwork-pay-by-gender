@@ -27,7 +27,7 @@ class UpworkQuerier:
     def __init__(self):
     
         # Creating a log of what happened during session
-        self.log = open('../json_files/log_upwork_data_collection_2017_10_20.txt', 'a')
+        self.log = open('json_files/log_upwork_data_collection_2017_10_20.txt', 'a')
         self.log.write("We have started collecting data")
         # Connect to the database 
         self.conn = psycopg2.connect("dbname=eureka01")
