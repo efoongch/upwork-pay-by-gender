@@ -78,7 +78,7 @@ class UpworkQuerier:
                 first_name = worker["name"].split(' ', 1)[0]
                 profile_photo = worker["portrait_50"]
                 # Call the API to return detailed info on each worker 
-                detailed_info = client.provider.get_provider(user_id)
+                detailed_info = self.client.provider.get_provider(user_id)
 
                 self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (user_id, created_at, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s, %s. %s, %s);",
                                 [user_id, time.strftime("%Y-%m-%d %H:%M:%S",created_at), first_name, profile_photo, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
