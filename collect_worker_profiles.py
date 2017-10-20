@@ -27,7 +27,7 @@ class UpworkQuerier:
     def __init__(self):
     
         # Creating a log of what happened during session
-        self.log = open('json_files/log_upwork_data_collection_2017_10_20.txt', 'a')
+        self.log = open('json_files/log_upwork_data_collection_2017_10_20_full.txt', 'a')
         self.log.write("We have started collecting data")
         # Connect to the database 
         self.conn = psycopg2.connect("dbname=eureka01")
@@ -49,7 +49,7 @@ class UpworkQuerier:
                               oauth_access_token_secret=self.oauth_access_token_secret)
         
     def collect_workers_basic_data(self): 
-        # Control number of users you want to collect at once 
+        # Control number of users you want to collect at once (set at most to 8 to collect about 500 per hour) 
         self.size_of_page = 8
         self.offset = 0
 
@@ -57,7 +57,7 @@ class UpworkQuerier:
         self.data = {'q': 'a'}
 
         # While we have collected fewer than x profiles, collect 40 profiles at a time and add that to a list
-        while self.offset < 16:
+        while self.offset < 11000:
             print "Now about to take profiles at offset {0}".format(self.offset)
             freelancers_on_page = self.client.provider_v2.search_providers(data=self.data, page_offset=self.offset, page_size=self.size_of_page)
             print "Now about to sleep before we collect detailed profile info"
@@ -76,10 +76,12 @@ class UpworkQuerier:
                 user_id = worker["id"]
                 first_name = worker["name"].split(' ', 1)[0]
                 profile_photo = worker["portrait_50"]
+                date_collected = "10_20_2017"
+
                 # Call the API to return detailed info on each worker 
                 detailed_info = self.client.provider.get_provider(user_id)
-                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (user_id, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
-                                [user_id, first_name, profile_photo, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
+                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20_full (user_id, date_collected, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s, %s, %s, %s);",
+                                [user_id, date_collected, first_name, profile_photo, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
 
             except psycopg2.IntegrityError:
                 self.conn.rollback()
@@ -87,9 +89,10 @@ class UpworkQuerier:
             except Exception as err:
                 print(err)
                 detailed_info = self.client.provider.get_provider(user_id)
+                date_collected = "10_20_2017"
                 # If something goes wrong, still save the worker data into the table
-                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (user_id, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
-                                ["NULL", "NULL", "NULL", psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
+                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20_full (user_id, date_collected, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s, %s, %s, %s);",
+                                ["NULL", date_collected, "NULL", "NULL", psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
                 self.log.write("Failed to parse worker: " + user_id + "\n")
                 self.log.flush()
                 print "Failed to parse worker: " + user_id + "\n"
