@@ -29,7 +29,7 @@ class UpworkQuerier:
         # Creating a log of what happened during session
         self.log = open('../json_files/log_upwork_data_collection_2017_10_18.txt', 'a')
         self.log.write("We have started collecting data")
-'''
+    '''
         # Connect to the database 
         self.conn = psycopg2.connect("dbname=eureka01")
         self.cur = self.conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
@@ -55,44 +55,45 @@ class UpworkQuerier:
         self.offset = 0
 
         # Parameters for searching for freelancers
-        self.data = {'q': 'united states', 'skills' : 'java'}
+        self.data = {'q': 'a'}
 
-        # While we have collected fewer than 500 profiles, collect 40 profiles at a time and add that to a list
+        # While we have collected fewer than x profiles, collect 40 profiles at a time and add that to a list
         while self.offset < 80:
             print "Now about to take profiles at offset {0}".format(self.offset)
             freelancers_on_page = self.client.provider_v2.search_providers(data=self.data, page_offset=self.offset, page_size=self.size_of_page)
+            print "Now about to sleep before we collect detailed profile info"
+            time.sleep(61)
+            print "Collecting detailed profile info and storing into database"
             self.on_workers(freelancers_on_page)
             self.offset += self.size_of_page
-            print "Now about to sleep"
+            print "Now about to sleep before we collect basic info again"
             time.sleep(61)
 
     def on_workers(self, workers):
-
-        # Load the json data each time we collect a page of 40 workers 
-       
 
         # Strip the list into individual workers, then save workers as different rows in our database
         for worker in workers:
             try:
                 user_id = worker["id"]
                 first_name = worker["name"].split(' ', 1)[0]
-                self.cur.execute("INSERT INTO workers_as_json_2017_10_18 (user_id, first_name, worker) VALUES (%s, %s, %s);",
-                                [user_id, first_name, psycopg2.extras.Json(worker)])
-                
-                #self.cur.execute("INSERT INTO tweet_as_json_2015_05_27 (id, created_at, uid, bb, geo, lat, lon, tweet) VALUES (%s,%s,%s,%s,%s,%s,%s, %s);",
-                                 #[id, time.strftime("%Y-%m-%d %H:%M:%S",created_at), uid, bb, geo, lat, lon,
-                                  #psycopg2.extras.Json(tweet)])
+                profile_photo = worker["portrait_50"]
+                # Call the API to return detailed info on each worker 
+                detailed_info = client.provider.get_provider(user_id)
+
+                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (user_id, created_at, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s, %s. %s, %s);",
+                                [user_id, time.strftime("%Y-%m-%d %H:%M:%S",created_at), first_name, profile_photo, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
+
             except psycopg2.IntegrityError:
                 self.conn.rollback()
 
             except Exception as err:
                 print(err)
                 # If something goes wrong, still save the worker data into the table
-                self.cur.execute("INSERT INTO workers_as_json_2017_10_18 (worker) VALUES (%s);", [psycopg2.extras.Json(worker)])
-                #self.cur.execute("INSERT INTO tweet_as_json_2015_05_27 (tweet) VALUES (%s);", [psycopg2.extras.Json(tweet)])
+                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (worker, detailed_info) VALUES (%s, %s);", [psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
                 self.log.write("Failed to parse worker: " + user_id + "\n")
                 self.log.flush()
                 print "Failed to parse worker: " + user_id + "\n"
+
             else:
                 self.conn.commit()
 
