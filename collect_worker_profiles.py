@@ -25,11 +25,10 @@ __email__ = 'eurekafoong2020@u.northwestern.edu'
 #logging.basicConfig()
 class UpworkQuerier: 
     def __init__(self):
-        '''
+    
         # Creating a log of what happened during session
-        self.log = open('../json_files/log_upwork_data_collection_2017_10_18.txt', 'a')
+        self.log = open('../json_files/log_upwork_data_collection_2017_10_20.txt', 'a')
         self.log.write("We have started collecting data")
-    '''
         # Connect to the database 
         self.conn = psycopg2.connect("dbname=eureka01")
         self.cur = self.conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
