@@ -88,7 +88,7 @@ class UpworkQuerier:
                 print(err)
                 # If something goes wrong, still save the worker data into the table
                 detailed_info = self.client.provider.get_provider(user_id)
-                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (worker, detailed_info) VALUES (%s);", [psycopg2.extras.Json(worker)])
+                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20 (worker) VALUES (%s);", [psycopg2.extras.Json(worker)])
                 self.log.write("Failed to parse worker: " + user_id + "\n")
                 self.log.flush()
                 print "Failed to parse worker: " + user_id + "\n"
