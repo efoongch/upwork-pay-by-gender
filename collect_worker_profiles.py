@@ -1,12 +1,7 @@
 '''
-collect_worker_profiles.py
 
 Purpose: 
-Collects basic information on a set number of worker profiles and store in PostgreSQL database 
-
-Left to do:
-- Detecting duplicates and not storing those in the database as additional rows
-- (If possible?) Not collecting worker profiles that we have already seen 
+Collects basic and detailed profile information on a set number of worker profiles and stores in PostgreSQL database 
 
 '''
 
@@ -22,21 +17,15 @@ __author__ = 'Eureka Foong'
 __credits__ = 'TBD'
 __email__ = 'eurekafoong2020@u.northwestern.edu'
 
-#logging.basicConfig()
 class UpworkQuerier: 
     def __init__(self):
-    
-        # Creating a log of what happened during session
-        self.log = open('json_files/log_upwork_data_collection_2017_10_20_full.txt', 'a')
-        self.log.write("We have started collecting data")
+        self.log = open('json_files/log_upwork_data_collection_2017_10_21_worldwide_allskills_trial.txt', 'a') # Creating a log
+        self.log.write("We have started collecting data!" + "\n")
+
         # Connect to the database 
         self.conn = psycopg2.connect("dbname=eureka01")
         self.cur = self.conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
         psycopg2.extensions.register_adapter(dict, psycopg2.extras.Json)
-
-        # Specify when to commit changes
-        self.commiton = 20000
-        self.counter = 0
 
         # Instantiating a new client with access token 
         self.public_key = '956957052307e970d62e6c85e4e52a76'
@@ -49,73 +38,60 @@ class UpworkQuerier:
                               oauth_access_token_secret=self.oauth_access_token_secret)
         
     def collect_workers_basic_data(self): 
-        # Control number of users you want to collect at once (set at most to 8 to collect about 500 per hour) 
-        self.size_of_page = 8
-        self.offset = 0
+        self.size_of_page = 8 # Number of profiles you want to collect at once (set 8 or less to collect about 500 per hour) 
+        self.offset = 0 # Starting offset 
+        self.data = {'q': 'a'} # Parameters for searching for freelancers (use 'q': 'a' if want to search all freelancers)
 
-        # Parameters for searching for freelancers
-        self.data = {'q': 'a'}
-
-        # While we have collected fewer than x profiles, collect 40 profiles at a time and add that to a list
-        while self.offset < 11000:
+        while True:
             print "Now about to take profiles at offset {0}".format(self.offset)
-            freelancers_on_page = self.client.provider_v2.search_providers(data=self.data, page_offset=self.offset, page_size=self.size_of_page)
-            print "Now about to sleep before we collect detailed profile info"
-            time.sleep(61)
-            print "Collecting detailed profile info and storing into database"
-            self.on_workers(freelancers_on_page)
-            self.offset += self.size_of_page
-            print "Now about to sleep before we collect basic info again"
-            time.sleep(61)
+            try: 
+                print "Now about to sleep before we collect basic info again"
+                time.sleep(61)
+                freelancers_on_page = self.client.provider_v2.search_providers(data=self.data, page_offset=self.offset, page_size=self.size_of_page)
+                
+            except Exception as err: # Prevents errors due to faulty API call (400 error)
+                print (err) 
+                print "Failed to collect data at offset {0}".format(self.offset)
+                self.log.write("Failed to collect data at offset {0}".format(self.offset) + "because of {0}".format(err) + "\n")
+                self.log.flush()
+                self.offset += 1
+
+            except KeyboardInterrupt: 
+                print 'interrupted!'
+                break
+
+            else:
+                print "Now about to sleep before we collect detailed profile info"
+                time.sleep(61)
+                print "Collecting detailed profile info and storing into database"
+                self.on_workers(freelancers_on_page)
+                self.offset += self.size_of_page
 
     def on_workers(self, workers):
-
-        # Strip the list into individual workers, then save workers as different rows in our database
         for worker in workers:
+            user_id = worker["id"]
+            user_name = worker["name"]
+            date_collected = "10_21_2017"
+            
             try:
-                time.sleep(1) # To prevent nonce error, make sure two requests aren't being sent at once  
-                user_id = worker["id"]
-                first_name = worker["name"].split(' ', 1)[0]
-                profile_photo = worker["portrait_50"]
-                date_collected = "10_20_2017"
+                time.sleep(1.5) # To prevent nonce error, make sure two requests aren't being sent at the same second  
+                detailed_info = self.client.provider.get_provider(user_id) # Call the API to return detailed info on each worker 
+                self.cur.execute("INSERT INTO 2017_10_21_upworkers_worldwide_allskills_trial (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
+                                [user_id, date_collected, user_name, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
 
-                # Call the API to return detailed info on each worker 
-                detailed_info = self.client.provider.get_provider(user_id)
-                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20_full (user_id, date_collected, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s, %s, %s, %s);",
-                                [user_id, date_collected, first_name, profile_photo, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
-
-            except psycopg2.IntegrityError:
+            except psycopg2.IntegrityError: # To prevent duplicate user_id from being added to the database
                 self.conn.rollback()
 
             except Exception as err:
                 print(err)
-                date_collected = "10_20_2017"
-                # If something goes wrong, still save the worker data into the table
-                self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20_full (user_id, date_collected, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s, %s, %s, %s);",
-                                ["NULL", date_collected, "NULL", "NULL", psycopg2.extras.Json(worker), {}])
-                self.log.write("Failed to parse worker: " + user_id + "\n")
+                self.cur.execute("INSERT INTO 2017_10_21_upworkers_worldwide_allskills_trial (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
+                                [user_id, date_collected, user_name, psycopg2.extras.Json(worker), {}])
+                self.log.write("Failed to parse worker: " + user_id + " because of {0}".format(err) + "\n")
                 self.log.flush()
                 print "Failed to parse worker: " + user_id + "\n"
 
             else:
                 self.conn.commit()
 
-        '''
-        # Start counting how many pages of workers we have added to the table
-        self.counter += 1
-        
-        # If we have collected a lot of workers, commit the changes to the database
-        if self.counter >= self.commiton:
-            self.conn.commit()
-            self.log.write("Committed " + str(self.counter) + ": " + time.strftime('%Y%m%d-%H%M%S') + "\n")
-            self.log.flush()
-            print "Committed" + str(self.counter) + ": " + time.strftime('%Y%m%d-%H%M%S') + "\n"
-            self.counter = 0
-        return
-        '''
-
-
-# Call function to collect basic data on workers
 myObject = UpworkQuerier()
 myObject.collect_workers_basic_data()
-
