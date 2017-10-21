@@ -73,6 +73,7 @@ class UpworkQuerier:
         # Strip the list into individual workers, then save workers as different rows in our database
         for worker in workers:
             try:
+                time.sleep(1) # To prevent nonce error, make sure two requests aren't being sent at once  
                 user_id = worker["id"]
                 first_name = worker["name"].split(' ', 1)[0]
                 profile_photo = worker["portrait_50"]
@@ -91,7 +92,7 @@ class UpworkQuerier:
                 date_collected = "10_20_2017"
                 # If something goes wrong, still save the worker data into the table
                 self.cur.execute("INSERT INTO general_workers_as_json_2017_10_20_full (user_id, date_collected, first_name, profile_photo, worker, detailed_info) VALUES (%s, %s, %s, %s, %s, %s);",
-                                ["NULL", date_collected, "NULL", "NULL", psycopg2.extras.Json(worker), "NULL"])
+                                ["NULL", date_collected, "NULL", "NULL", psycopg2.extras.Json(worker), {}])
                 self.log.write("Failed to parse worker: " + user_id + "\n")
                 self.log.flush()
                 print "Failed to parse worker: " + user_id + "\n"
