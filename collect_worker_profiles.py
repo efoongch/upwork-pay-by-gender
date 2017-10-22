@@ -39,7 +39,7 @@ class UpworkQuerier:
         
     def collect_workers_basic_data(self): 
         self.size_of_page = 8 # Number of profiles you want to collect at once (set 8 or less to collect about 500 per hour) 
-        self.offset = 0 # Starting offset 
+        self.offset = 1800 # Starting offset 
         self.data = {'q': 'a'} # Parameters for searching for freelancers (use 'q': 'a' if want to search all freelancers)
 
         while True:
@@ -83,10 +83,8 @@ class UpworkQuerier:
             except psycopg2.IntegrityError: # To prevent duplicate user_id from being added to the database
                 self.conn.rollback()
 
-            except Exception as err:
+            except Exception as err: # Any other errors, simply mark down the user_id and we will collect data later
                 print(err)
-                self.cur.execute("INSERT INTO upwork_worldwide_allskills_2017_10_21 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
-                                [user_id, date_collected, user_name, psycopg2.extras.Json(worker), {}])
                 self.log.write("Failed to parse worker: " + user_id + " because of {0}".format(err) + "\n")
                 self.log.flush()
                 print "Failed to parse worker: " + user_id + "\n"
