@@ -72,7 +72,7 @@ class UpworkQuerier:
         for worker in workers:
             user_id = worker["id"]
             user_name = worker["name"]
-            date_collected = "10_21_2017"
+            date_collected = "10_23_2017"
             
             try:
                 time.sleep(1.5) # To prevent nonce error, make sure two requests aren't being sent at the same second  
