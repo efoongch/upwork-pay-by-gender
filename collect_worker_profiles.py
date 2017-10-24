@@ -39,7 +39,7 @@ class UpworkQuerier:
         
     def collect_workers_basic_data(self): 
         self.size_of_page = 8 # Number of profiles you want to collect at once (set 8 or less to collect about 500 per hour) 
-        self.offset = 7683 # Starting offset 
+        self.offset = 9506 # Starting offset 
         self.data = {'q': 'a'} # Parameters for searching for freelancers (use 'q': 'a' if want to search all freelancers)
 
         while True:
