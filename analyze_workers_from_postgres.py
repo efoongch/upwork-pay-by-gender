@@ -70,10 +70,10 @@ class DatabaseAnalyzer:
             elif i[1] == "problem":
                 self.problem_detector_count += 1
 
-    self.detector_rate = (self.male_detector_count + self.female_detector_count) / float(self.male_detector_count + self.female_detector_count + self.unknown_detector_count + self.problem_detector_count) * 100
+        self.detector_rate = (self.male_detector_count + self.female_detector_count) / float(self.male_detector_count + self.female_detector_count + self.unknown_detector_count + self.problem_detector_count) * 100
 
-    print "Using gender_detector package: Male: {0}, Female: {1}, Unknown: {2}, Problem: {3}. ".format(self.male_detector_count, self.female_detector_count, self.unknown_detector_count, self.problem_detector_count) + "This is the rate of identifying gender: {0}%".format(self.detector_rate)
-    print "This is our final user count: {0}".format(self.user_count)
+        print "Using gender_detector package: Male: {0}, Female: {1}, Unknown: {2}, Problem: {3}. ".format(self.male_detector_count, self.female_detector_count, self.unknown_detector_count, self.problem_detector_count) + "This is the rate of identifying gender: {0}%".format(self.detector_rate)
+        print "This is our final user count: {0}".format(self.user_count)
 
 myObject = DatabaseAnalyzer()
 myObject.identify_gender()
