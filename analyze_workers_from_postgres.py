@@ -31,7 +31,9 @@ class DatabaseAnalyzer:
     def identify_gender(self):
         self.cur.execute("SELECT detailed_info FROM upwork_unitedstates_webdev_2017_10_23;")
         for user in self.cur:
-            print json.dumps(user, indent=2)
+            while self.user_count < 1:
+                print json.dumps(user, indent=2)
+                self.user_count += 1
             '''
             worker_id = user["ciphertext"]
             first_name = user["dev_first_name"]
