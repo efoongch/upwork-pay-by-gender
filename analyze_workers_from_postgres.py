@@ -36,7 +36,7 @@ class DatabaseAnalyzer:
         self.problem_average_wage = 0
 
     def identify_gender(self):
-        self.cur.execute("SELECT detailed_info FROM upwork_unitedstates_webdev_2017_10_23;")
+        self.cur.execute("SELECT detailed_info FROM upwork_worldwide_allskills_2017_10_21;")
         for user in self.cur:
             worker_id = user[0]["ciphertext"]
             first_name = user[0]["dev_first_name"]
