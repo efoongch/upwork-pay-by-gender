@@ -56,12 +56,16 @@ class DatabaseAnalyzer:
         for i in self.worker_list:
             if i[1] == "male":
                 self.male_list.append(i[2])
+                self.male_detector_count += 1
             elif i[1] == "female":
                 self.female_list.append(i[2])
+                self.female_detector_count += 1
             elif i[1] == "unknown":
                 self.unknown_list.append(i[2])
+                self.unknown_detector_count += 1
             elif i[1] == "problem":
                 self.problem_list.append(i[2])
+                self.problem_detector_count += 1
 
         self.detector_rate = (self.male_detector_count + self.female_detector_count) / float(self.user_count) * 100
         self.male_average_wage = numpy.mean(self.male_list)
