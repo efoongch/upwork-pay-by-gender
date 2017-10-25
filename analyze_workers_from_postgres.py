@@ -9,8 +9,7 @@ from gender_detector import GenderDetector
 import psycopg2, psycopg2.extras
 
 class DatabaseAnalyzer: 
-    
-    
+
     def __init__(self):
         self.log = open('json_files/log_upwork_data_analysis_2017_10_24_unitedstates_webdev_trial.txt', 'a') # Creating a log
         self.log.write("We have started analyzing data!" + "\n")
@@ -36,7 +35,10 @@ class DatabaseAnalyzer:
             first_name = user[0]["dev_first_name"]
             gender_by_detector = "none"
             duplicate = ""
-            print "This is worker {0} whose name is {1}".format(worker_id, first_name)
+            try:
+                print "This is worker {0} whose name is {1}".format(worker_id, first_name)
+            except:
+                print "This is worker {0}".format(worker_id)
 
             # Just double checking that there are no duplicates
             if worker_id in self.user_ids:
@@ -57,7 +59,10 @@ class DatabaseAnalyzer:
 
             self.worker_list.append([first_name, gender_by_detector])
 
-            print "Number " + str(self.user_count) + " is {0}".format(first_name) + " with id number {0}".format(worker_id) + "who is {0} (detector)".format(gender_by_detector) + duplicate
+            try:
+                print "Number " + str(self.user_count) + " is {0}".format(first_name) + " with id number {0}".format(worker_id) + "who is {0} (detector)".format(gender_by_detector) + duplicate
+            except:
+                print "Number " + str(self.user_count) + " with id number {0}".format(worker_id) + "who is {0} (detector)".format(gender_by_detector) + duplicate
 
         # Comparing the effectivness of approaches to identifying gender
         for i in self.worker_list:
