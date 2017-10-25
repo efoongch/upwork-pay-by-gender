@@ -33,7 +33,7 @@ class DatabaseAnalyzer:
         for user in self.cur:
             while self.user_count < 1:
                 worker_id = user[0]["ciphertext"]
-                first_name = user["dev_first_name"]
+                first_name = user[0]["dev_first_name"]
                 print worker_id
                 print first_name
                 self.user_count += 1
