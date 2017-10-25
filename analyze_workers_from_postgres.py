@@ -27,6 +27,7 @@ class DatabaseAnalyzer:
         self.male_detector_count = 0
         self.unknown_detector_count = 0
         self.problem_detector_count = 0
+        self.detector_rate = 0
 
     def identify_gender(self):
         self.cur.execute("SELECT detailed_info FROM upwork_unitedstates_webdev_2017_10_23;")
