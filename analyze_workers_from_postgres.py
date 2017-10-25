@@ -40,16 +40,9 @@ class DatabaseAnalyzer:
         for user in self.cur:
             worker_id = user[0]["ciphertext"]
             first_name = user[0]["dev_first_name"]
-            bill_rate = user[0]["dev_bill_rate"]
+            bill_rate = float(user[0]["dev_bill_rate"])
             gender_by_detector = "none"
-
-            try:
-                print "This is worker {0} whose name is {1}".format(worker_id, first_name)
-            except:
-                print "This is worker {0}".format(worker_id)
-
-            self.user_count += 1
-
+            
             # Using gender_detector package to detect gender
             try:
                 gender_by_detector = self.detector.guess(first_name)
@@ -57,6 +50,7 @@ class DatabaseAnalyzer:
                 gender_by_detector = "problem"
 
             self.worker_list.append([first_name, gender_by_detector, bill_rate])
+            self.user_count += 1
 
         # Adding bill rate to respective lists
         for i in self.worker_list:
