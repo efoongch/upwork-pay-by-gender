@@ -31,8 +31,8 @@ class DatabaseAnalyzer:
     def identify_gender(self):
         self.cur.execute("SELECT detailed_info FROM upwork_unitedstates_webdev_2017_10_23;")
         for user in self.cur:
-            worker_id = i["ciphertext"]
-            first_name = i["dev_first_name"]
+            worker_id = user["ciphertext"]
+            first_name = user["dev_first_name"]
             print "This is worker {0} whose name is {1}".format(worker_id, first_name)
             self.user_count += 1
 
