@@ -46,7 +46,7 @@ class DatabaseAnalyzer:
                 bill_rate = float(user[0]["dev_bill_rate"])
                 gender_by_detector = "none"
 
-            except RuntimeWarning:
+            except:
                 print "This one has no detailed info: {0}".format(self.user_count)
                 self.no_detailed_info_count += 1
 
