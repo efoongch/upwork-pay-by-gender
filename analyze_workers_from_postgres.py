@@ -38,6 +38,7 @@ class DatabaseAnalyzer:
     def identify_gender(self):
         self.cur.execute("SELECT detailed_info FROM upwork_worldwide_allskills_2017_10_21;")
         for user in self.cur:
+            print "Now we're on user number {0}".format(self.user_count)
             try:
                 worker_id = user[0][0]["ciphertext"]
                 first_name = user[0][0]["dev_first_name"]
@@ -48,7 +49,7 @@ class DatabaseAnalyzer:
                 first_name = user[0]["dev_first_name"]
                 bill_rate = float(user[0]["dev_bill_rate"])
                 gender_by_detector = "none"
-                
+
             # Using gender_detector package to detect gender
             try:
                 gender_by_detector = self.detector.guess(first_name)
