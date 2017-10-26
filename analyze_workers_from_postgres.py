@@ -45,10 +45,9 @@ class DatabaseAnalyzer:
                 bill_rate = float(user[0][0]["dev_bill_rate"])
                 gender_by_detector = "none"
             except: 
-                worker_id = user[0]["ciphertext"]
-                first_name = user[0]["dev_first_name"]
-                bill_rate = float(user[0]["dev_bill_rate"])
-                gender_by_detector = "none"
+                print "This one is a problem"
+                print json.dumps(user, indent=2)
+                break 
 
             # Using gender_detector package to detect gender
             try:
