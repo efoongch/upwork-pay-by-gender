@@ -40,9 +40,9 @@ class DatabaseAnalyzer:
         for user in self.cur:
             print "Now we're on user number {0}".format(self.user_count)
             try:
-                worker_id = user[0][0]["ciphertext"]
-                first_name = user[0][0]["dev_first_name"]
-                bill_rate = float(user[0][0]["dev_bill_rate"])
+                worker_id = user[0]["ciphertext"]
+                first_name = user[0]["dev_first_name"]
+                bill_rate = float(user[0]["dev_bill_rate"])
                 gender_by_detector = "none"
             except: 
                 print "This one is a problem"
