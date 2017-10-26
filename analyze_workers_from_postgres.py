@@ -39,7 +39,8 @@ class DatabaseAnalyzer:
         self.cur.execute("SELECT detailed_info FROM upwork_worldwide_allskills_2017_10_21;")
         for user in self.cur:
             while self.user_count < 1:
-                print json.dump(user, indent=2)
+                print json.dumps(user, indent=2)
+                self.user_count += 1
             '''
             worker_id = user[0]["ciphertext"]
             first_name = user[0]["dev_first_name"]
