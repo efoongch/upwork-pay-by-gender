@@ -34,6 +34,7 @@ class DatabaseAnalyzer:
         self.female_average_wage = 0
         self.unknown_average_wage = 0
         self.problem_average_wage = 0
+        self.no_detailed_info_count = 0
 
     def identify_gender(self):
         self.cur.execute("SELECT detailed_info FROM upwork_worldwide_allskills_2017_10_21;")
@@ -44,10 +45,10 @@ class DatabaseAnalyzer:
                 first_name = user[0]["dev_first_name"]
                 bill_rate = float(user[0]["dev_bill_rate"])
                 gender_by_detector = "none"
-            except: 
-                print "This one is a problem"
-                print json.dumps(user, indent=2)
-                break 
+
+            except RuntimeWarning:
+                print "This one has no detailed info: {0}".format(self.user_count)
+                self.no_detailed_info_count += 1
 
             # Using gender_detector package to detect gender
             try:
@@ -82,7 +83,7 @@ class DatabaseAnalyzer:
         print "Using gender_detector package: Male: {0}, Female: {1}, Unknown: {2}, Problem: {3}. ".format(self.male_detector_count, self.female_detector_count, self.unknown_detector_count, self.problem_detector_count) + "This is the rate of identifying gender: {0}%".format(self.detector_rate)
         print "This is our final user count: {0}".format(self.user_count)
         print "Average wages: Male ${0}, Female ${1}, Unknown ${2}, Problem ${3}".format(self.male_average_wage, self.female_average_wage, self.unknown_average_wage, self.problem_average_wage)
-
+        print "And we had these many profiles with empty detailed_info: {0} or {1}%".format(self.no_detailed_info_count, float(self.no_detailed_info_count/self.user_count)*100)
 myObject = DatabaseAnalyzer()
 myObject.identify_gender()
 
