@@ -36,8 +36,11 @@ class DatabaseAnalyzer:
         self.problem_average_wage = 0
 
     def identify_gender(self):
-        self.cur.execute("SELECT detailed_info FROM upwork_unitedstates_webdev_2017_10_23;")
+        self.cur.execute("SELECT detailed_info FROM upwork_worldwide_allskills_2017_10_21;")
         for user in self.cur:
+            while self.user_count < 1:
+                print json.dump(user, indent=2)
+            '''
             worker_id = user[0]["ciphertext"]
             first_name = user[0]["dev_first_name"]
             bill_rate = float(user[0]["dev_bill_rate"])
@@ -76,6 +79,7 @@ class DatabaseAnalyzer:
         print "Using gender_detector package: Male: {0}, Female: {1}, Unknown: {2}, Problem: {3}. ".format(self.male_detector_count, self.female_detector_count, self.unknown_detector_count, self.problem_detector_count) + "This is the rate of identifying gender: {0}%".format(self.detector_rate)
         print "This is our final user count: {0}".format(self.user_count)
         print "Average wages: Male ${0}, Female ${1}, Unknown ${2}, Problem ${3}".format(self.male_average_wage, self.female_average_wage, self.unknown_average_wage, self.problem_average_wage)
+        '''
 
 myObject = DatabaseAnalyzer()
 myObject.identify_gender()
