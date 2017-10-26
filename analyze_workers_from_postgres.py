@@ -76,7 +76,6 @@ class DatabaseAnalyzer:
         print "Using gender_detector package: Male: {0}, Female: {1}, Unknown: {2}, Problem: {3}. ".format(self.male_detector_count, self.female_detector_count, self.unknown_detector_count, self.problem_detector_count) + "This is the rate of identifying gender: {0}%".format(self.detector_rate)
         print "This is our final user count: {0}".format(self.user_count)
         print "Average wages: Male ${0}, Female ${1}, Unknown ${2}, Problem ${3}".format(self.male_average_wage, self.female_average_wage, self.unknown_average_wage, self.problem_average_wage)
-        '''
 
 myObject = DatabaseAnalyzer()
 myObject.identify_gender()
