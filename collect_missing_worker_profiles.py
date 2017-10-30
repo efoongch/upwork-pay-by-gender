@@ -87,7 +87,7 @@ class MissingProfilesQuerier:
 
         print "Total number of profiles we collected is {0}".format(number_of_profiles)
         print "Total number of profiles in the list is {0}".format(len(self.missing_profiles))
-        '''
+            '''
 
 myObject = MissingProfilesQuerier()
 myObject.define_missing_profiles()
