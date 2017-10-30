@@ -68,13 +68,12 @@ class MissingProfilesQuerier:
                 user_name = detailed_info[0]["name"]
                 print user_name
                 number_of_profiles += 1
-                '''
+                
                 print "Collected detailed info for " + user_name
                 self.cur.execute("INSERT INTO upwork_worldwide_allskills_2017_10_21 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
                                 [user_id, date_collected, user_name, basic_info, psycopg2.extras.Json(detailed_info)])
                 print "Put detailed info into database"
                 
-                '''
 
             except psycopg2.IntegrityError: # To prevent duplicate user_id from being added to the database
                 self.conn.rollback()
