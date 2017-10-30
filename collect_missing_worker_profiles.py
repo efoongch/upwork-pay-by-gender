@@ -60,7 +60,7 @@ class MissingProfilesQuerier:
 
             time.sleep(3)
             detailed_info = self.client.provider.get_provider(str(user_id))
-            user_name = detailed_info["name"]
+            user_name = detailed_info[0["dev_first_name"]
             print user_name
 
             '''
