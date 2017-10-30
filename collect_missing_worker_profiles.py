@@ -64,7 +64,5 @@ class MissingProfilesQuerier:
                 user_name = detailed_info[0]["name"]
                 print user_name
 
-            
-
 myObject = MissingProfilesQuerier()
 myObject.define_missing_profiles()
