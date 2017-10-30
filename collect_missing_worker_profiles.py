@@ -63,6 +63,7 @@ class MissingProfilesQuerier:
                 detailed_info = self.client.provider.get_provider(str(user_id)) # Call the API to return detailed info on each worker 
                 user_name = detailed_info[0]["name"]
                 print user_name
+                '''
                 number_of_profiles += 1
                 
                 print "Collected detailed info for " + user_name
@@ -83,8 +84,10 @@ class MissingProfilesQuerier:
             else:
                 self.conn.commit()
 
+
         print "Total number of profiles we collected is {0}".format(number_of_profiles)
         print "Total number of profiles in the list is {0}".format(len(self.missing_profiles))
+        '''
 
 myObject = MissingProfilesQuerier()
 myObject.define_missing_profiles()
