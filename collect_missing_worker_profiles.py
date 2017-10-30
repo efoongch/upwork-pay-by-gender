@@ -46,6 +46,8 @@ class MissingProfilesQuerier:
                     profile_id = line[24:43]
                     self.missing_profiles.append(profile_id)
 
+        print self.missing_profiles
+
         self.collect_missing_profiles()
 
 
