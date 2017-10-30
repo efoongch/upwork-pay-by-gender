@@ -51,6 +51,8 @@ class MissingProfilesQuerier:
 
     def collect_missing_profiles(self):
         number_of_profiles = 0
+        print "We are in collect_missing_profiles"
+        
         for user_id in self.missing_profiles:
             date_collected = "10_30_2017"
             basic_info = {}
