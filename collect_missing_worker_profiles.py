@@ -40,7 +40,6 @@ class MissingProfilesQuerier:
         self.missing_profiles = []
         
     def define_missing_profiles(self):
-
         with open('json_files/log_upwork_data_collection_2017_10_21_worldwide_allskills.txt') as f:
             for line in f:
                 if re.search("Failed to parse worker: ", line):
@@ -49,10 +48,11 @@ class MissingProfilesQuerier:
 
         collect_missing_profiles()
 
+
     def collect_missing_profiles(self):
         number_of_profiles = 0
         print "We are in collect_missing_profiles"
-        
+
         for user_id in self.missing_profiles:
             date_collected = "10_30_2017"
             basic_info = {}
@@ -83,4 +83,4 @@ class MissingProfilesQuerier:
         print "Total number of profiles in the list is {0}".format(len(self.missing_profiles))
 
 myObject = MissingProfilesQuerier()
-myObject.collect_missing_profiles()
+myObject.define_missing_profiles()
