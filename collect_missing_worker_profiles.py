@@ -19,7 +19,7 @@ __email__ = 'eurekafoong2020@u.northwestern.edu'
 
 class MissingProfilesQuerier: 
     def __init__(self):
-        self.log = open('json_files/log_upwork_missing_data_collection_2017_10_30_worldwide_allskills.txt', 'a') # Creating a log
+        self.log = open('json_files/log_upwork_missing_data_collection_2017_10_30_worldwide_allskills_2.txt', 'a') # Creating a log
         self.log.write("We have started querying missing profiles!" + "\n")
 
         # Connect to the database
@@ -68,16 +68,27 @@ class MissingProfilesQuerier:
                 self.cur.execute("INSERT INTO upwork_worldwide_allskills_2017_10_21 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
                                [user_id, date_collected, user_name, basic_info, psycopg2.extras.Json(detailed_info)])
                 print "Put detailed info into database"
-                
 
             except psycopg2.IntegrityError: # To prevent duplicate user_id from being added to the database
                 self.conn.rollback()
 
-            except Exception as err: # Any other errors, simply mark down the user_id and we will collect data later
-                print(err)
-                self.log.write("Failed to parse worker: " + user_id + " because of {0}".format(err) + "\n")
-                self.log.flush()
-                print "Failed to parse worker: " + user_id + "\n"
+            except: # Any other errors, simply mark down the user_id and we will collect data later
+                try: 
+                    time.sleep(5) #To prevent nonce error, make sure two requests aren't being sent at the same second  
+                    detailed_info = self.client.provider.get_provider(user_id) # Call the API to return detailed info on each worker 
+                    user_name = detailed_info["dev_first_name"]
+                    number_of_profiles += 1
+                    
+                    print "Collected detailed info for " + user_name
+                    self.cur.execute("INSERT INTO upwork_worldwide_allskills_2017_10_21 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
+                                   [user_id, date_collected, user_name, basic_info, psycopg2.extras.Json(detailed_info)])
+                    print "Put detailed info into database"
+
+                except Exception as err:
+                    print(err)
+                    self.log.write("Failed to parse worker: " + user_id + " because of {0}".format(err) + "\n")
+                    self.log.flush()
+                    print "Failed to parse worker: " + user_id + "\n"
 
             else:
                 self.conn.commit()
