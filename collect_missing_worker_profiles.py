@@ -54,9 +54,7 @@ class MissingProfilesQuerier:
         number_of_profiles = 0
         print "We are in collect_missing_profiles"
 
-        try:
-            print json.dumps (self.client.provider.get_provider("~0160f5925b78a31076"), indent=2)
-
+        print json.dumps (self.client.provider.get_provider("~0160f5925b78a31076"), indent=2)
 
 
 myObject = MissingProfilesQuerier()
