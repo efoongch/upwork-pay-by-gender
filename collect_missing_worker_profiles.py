@@ -60,7 +60,7 @@ class MissingProfilesQuerier:
             try:
                 time.sleep(3) # To prevent nonce error, make sure two requests aren't being sent at the same second  
                 detailed_info = self.client.provider.get_provider(user_id) # Call the API to return detailed info on each worker 
-                user_name = detailed_info["name"]
+                user_name = detailed_info[0]["name"]
                 print user_name
                 number_of_profiles += 1
                 '''
