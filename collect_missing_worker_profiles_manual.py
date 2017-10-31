@@ -55,9 +55,9 @@ class MissingProfilesManualQuerier:
 
         except Exception as err:
             print(err)
-            self.log.write("Failed to parse worker: " + user_id + " because of {0}".format(err) + "\n")
+            self.log.write("Failed to parse worker: " + "~011b0beb99fd26ee7a" + " because of {0}".format(err) + "\n")
             self.log.flush()
-            print "Failed to parse worker: " + user_id + "\n"
+            print "Failed to parse worker: " + "~011b0beb99fd26ee7a" + "\n"
 
         else:
             self.conn.commit()
