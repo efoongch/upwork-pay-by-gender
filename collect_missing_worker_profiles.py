@@ -19,7 +19,7 @@ __email__ = 'eurekafoong2020@u.northwestern.edu'
 
 class MissingProfilesQuerier: 
     def __init__(self):
-        self.log = open('json_files/log_upwork_missing_data_collection_2017_10_31_worldwide_allskills_2.txt', 'a') # Creating a log
+        self.log = open('json_files/log_upwork_missing_data_collection_2017_10_31_unitedstates_webdev.txt', 'a') # Creating a log
         self.log.write("We have started querying missing profiles!" + "\n")
 
         # Connect to the database
@@ -40,7 +40,7 @@ class MissingProfilesQuerier:
         self.missing_profiles = []
         
     def define_missing_profiles(self):
-        with open('json_files/log_upwork_missing_data_collection_2017_10_30_worldwide_allskills_3.txt') as f:
+        with open('json_files/log_upwork_missing_data_collection_2017_10_30_unitedstates_webdev.txt') as f:
             for line in f:
                 if re.search("Failed to parse worker: ", line):
                     profile_id = line[24:43]
@@ -65,7 +65,7 @@ class MissingProfilesQuerier:
                 number_of_profiles += 1
                 
                 print "Collected detailed info for " + user_name
-                self.cur.execute("INSERT INTO upwork_worldwide_allskills_2017_10_21 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
+                self.cur.execute("INSERT INTO upwork_unitedstates_webdev_2017_10_23 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
                                [user_id, date_collected, user_name, basic_info, psycopg2.extras.Json(detailed_info)])
                 print "Put detailed info into database"
 
@@ -80,7 +80,7 @@ class MissingProfilesQuerier:
                     number_of_profiles += 1
                     
                     print "Collected detailed info for " + user_name
-                    self.cur.execute("INSERT INTO upwork_worldwide_allskills_2017_10_21 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
+                    self.cur.execute("INSERT INTO upwork_unitedstates_webdev_2017_10_23 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
                                    [user_id, date_collected, user_name, basic_info, psycopg2.extras.Json(detailed_info)])
                     print "Put detailed info into database"
 
