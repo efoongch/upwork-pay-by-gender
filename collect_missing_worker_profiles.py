@@ -1,7 +1,7 @@
 '''
 
 Purpose: 
-Collects basic and detailed profile information for workers that were skipped during initial data collection
+Collects detailed profile information for workers that were skipped during initial data collection
 
 '''
 
