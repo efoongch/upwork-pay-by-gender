@@ -28,10 +28,10 @@ class MissingProfilesManualQuerier:
         psycopg2.extensions.register_adapter(dict, psycopg2.extras.Json)
 
         # Instantiating a new client with access token 
-        self.public_key = '956957052307e970d62e6c85e4e52a76'
-        self.secret_key = '375a5cc1bbe07402'
-        self.oauth_access_token = '835259548ace3959309d17fa02a7143c'
-        self.oauth_access_token_secret = '018107b1b8d2bc47'
+        self.public_key = 'ed8ff5784819b4dbadb800d8e9e10e21'
+        self.secret_key = '03a6e678f4ee3246'
+        self.oauth_access_token = 'b60900600fc9e6da57d7711c2d098591'
+        self.oauth_access_token_secret = '5022f67f9bccb73d'
 
         self.client = upwork.Client(self.public_key, self.secret_key,
                               oauth_access_token=self.oauth_access_token,
