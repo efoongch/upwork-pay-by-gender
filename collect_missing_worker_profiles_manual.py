@@ -40,7 +40,7 @@ class MissingProfilesManualQuerier:
 
     def write_profile(self):
 
-        user_id = input('Enter the worker ID: ')
+        user_id = raw_input('Enter the worker ID: ')
 
         try: 
             detailed_info = self.client.provider.get_provider(user_id) # Call the API to return detailed info on each worker 
