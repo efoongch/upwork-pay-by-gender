@@ -19,7 +19,7 @@ __email__ = 'eurekafoong2020@u.northwestern.edu'
 
 class MissingProfilesQuerier: 
     def __init__(self):
-        self.log = open('json_files/log_upwork_missing_data_collection_2017_10_31_worldwide_allskills.txt', 'a') # Creating a log
+        self.log = open('json_files/log_upwork_missing_data_collection_2017_10_31_worldwide_allskills_2.txt', 'a') # Creating a log
         self.log.write("We have started querying missing profiles!" + "\n")
 
         # Connect to the database

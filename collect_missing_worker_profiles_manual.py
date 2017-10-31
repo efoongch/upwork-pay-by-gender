@@ -40,10 +40,10 @@ class MissingProfilesManualQuerier:
 
     def write_profile(self):
 
-        #user_id = raw_input('Enter the worker ID: ')
+        user_id = raw_input('Enter the worker ID: ')
 
         try: 
-            detailed_info = self.client.provider.get_provider("~011b0beb99fd26ee7a") # Call the API to return detailed info on each worker 
+            detailed_info = self.client.provider.get_provider(user_id) # Call the API to return detailed info on each worker 
             user_name = detailed_info["dev_first_name"]
             print "Collected detailed info for " + user_name
             self.cur.execute("INSERT INTO upwork_worldwide_allskills_2017_10_21 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
@@ -55,9 +55,9 @@ class MissingProfilesManualQuerier:
 
         except Exception as err:
             print(err)
-            self.log.write("Failed to parse worker: " + "~011b0beb99fd26ee7a" + " because of {0}".format(err) + "\n")
+            self.log.write("Failed to parse worker: " + user_id + " because of {0}".format(err) + "\n")
             self.log.flush()
-            print "Failed to parse worker: " + "~011b0beb99fd26ee7a" + "\n"
+            print "Failed to parse worker: " + user_id + "\n"
 
         else:
             self.conn.commit()
