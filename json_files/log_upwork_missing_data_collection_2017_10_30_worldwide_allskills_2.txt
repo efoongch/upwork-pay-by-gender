@@ -1,0 +1,5 @@
+We have started querying missing profiles!
+Failed to parse worker: ~0160f5925b78a31076 because of duplicate key value violates unique constraint "upwork_worldwide_allskills_2017_10_21_pkey"
+DETAIL:  Key (user_id)=(~0160f5925b78a31076) already exists.
+
+Failed to parse worker: ~011b0beb99fd26ee7a because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
