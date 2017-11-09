@@ -273,3 +273,180 @@ Failed to parse worker: ~01d49d0370a8181ed6 because of HTTP Error 403: Code 403:
 Failed to parse worker: ~016a1fa10370bdef92 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
 Failed to parse worker: ~015ed7d413e6f6ad7c because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
 Failed to parse worker: ~015b5e7bcb6738ef93 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~0162c5c1705cb978d7 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01803c3578e9932ed9 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~010e2e73d553e5c62b because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~010e2e73d553e5c62b because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01a7be085597fa00d9 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01505e556798462e64 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01514aa97f39f04490 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01ca450eff14fedf24 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01ca9459b1e2267772 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01916ba0aa89d77b16 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01830b6b188552de42 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01408db99e66200f5d because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01505e556798462e64 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01ca450eff14fedf24 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01a7be085597fa00d9 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01a7be085597fa00d9 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01ca450eff14fedf24 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01ca9459b1e2267772 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01ff2431cb86f5d2ca because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~012b2d94287d52ca0d because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~013a26be13a969c066 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to collect data at offset 27072because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27073because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27074because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27075because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27076because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27077because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27078because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27079because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27080because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27081because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27082because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27083because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27084because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27085because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27086because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27087because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27088because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27089because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27090because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27091because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27092because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27093because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27094because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27095because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27096because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27097because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27098because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27099because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27100because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27101because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27102because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27103because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27104because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27105because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27106because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27107because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27108because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27109because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27110because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27111because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27112because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27113because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27114because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27115because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27116because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27117because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27118because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27119because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27120because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27121because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27122because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27123because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27124because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27125because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27126because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27127because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27128because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27129because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27130because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27131because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27132because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27133because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27134because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27135because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27136because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27137because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27138because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27139because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27140because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27141because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27142because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27143because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27144because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27145because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27146because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27147because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27148because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27149because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27150because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27151because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27152because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27153because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27154because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27155because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27156because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27157because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27158because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27159because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27160because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27161because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27162because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27163because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27164because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27165because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27166because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27167because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27168because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27169because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27170because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27171because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27172because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27173because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27174because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27175because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27176because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27177because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27178because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27179because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27180because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27181because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27182because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27183because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27184because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27185because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27186because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27187because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27188because of HTTP Error 500: Code N/A: N/A
+Failed to collect data at offset 27189because of HTTP Error 500: Code N/A: N/A
+Failed to parse worker: ~0175f62f5aeef9ebba because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~011838c0b44dd7bcc4 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01b6cd4ba35fcb9c7f because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~0153407bc7f30900cb because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01d8983780e5eeea50 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01e6e0825f3b99f4ca because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~0164e8acf5f0e9e505 because of HTTP Error 502: Code N/A: N/A
+Failed to parse worker: ~01158f25a6c389800e because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to collect data at offset 29118because of HTTP Error 412: Code 0: Search backend error. Please contact api support.
+Failed to parse worker: ~014cba0402e448d1dc because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to collect data at offset 31399because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to collect data at offset 31568because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to collect data at offset 32577because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to collect data at offset 32762because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~0120c1c02b6712a782 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~0160d1ed45ea203084 because of HTTP Error 502: Code N/A: N/A
+Failed to parse worker: ~013c03a2254ed4a74d because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~0138ab2239fc600ddc because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01ab3acaa7de84e1e6 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01cd1f9b23654009de because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~0136c53df389497470 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01003952a28cb93863 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01988d339d9aba841c because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~0113cc0bd437a67a6f because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01359f5acee32f2e6f because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~0149e8f19634717533 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01359f5acee32f2e6f because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01c066cad2083f6579 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01e80157388d35ab64 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01a2f5a52be712c651 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01b6cd4ba35fcb9c7f because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~017d114668c401304e because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~014d52c8d943e68bea because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~01969ce807321d6185 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to parse worker: ~0163f61dcbf3c60a17 because of HTTP Error 403: Code 403: Duplicate timestamp/nonce combination, possible replay attack. Request rejected.
+Failed to collect data at offset 35067because of HTTP Error 412: Code 0: Search backend error. Please contact api support.
+Failed to parse worker: ~0147fac0fa2e42945f because of HTTP Error 401: Code 401: Unauthorized
+Interrupted at offset 37236
