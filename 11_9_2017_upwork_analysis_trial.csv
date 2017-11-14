@@ -1,0 +1,15 @@
+user_count,worker_id,first_name,gender,bill_rate,country,education,work_experience,job_category
+,~019ef3758cf73d289c,Valentina,temporary,13.00,Spain,default,7,Design & Creative
+,~014c24de20d2446d42,Marwen,temporary,15.00,Spain,none,69,"Web, Mobile & Software Dev"
+,~01f5a19ca9880b867f,Bruno,temporary,28.89,Italy,default,97,"Web, Mobile & Software Dev"
+,~0191a24ec4aadf154b,Matt,temporary,84.00,United Kingdom,none,none,Design & Creative
+,~019309dfcb2b02ed10,Orkun,temporary,30.00,Turkey,default,74,Design & Creative
+,~01dc5d676329574590,Ganang,temporary,30.00,Indonesia,default,108,Design & Creative
+,~016e70f671e01d08f5,Yash,temporary,18.00,India,default,43,"Web, Mobile & Software Dev"
+,~0193675f0ca4d4c14a,Alex,temporary,20.00,Ukraine,none,none,Design & Creative
+,~0125bee9e4f17ef78e,Rayhan,temporary,16.00,France,default,14,Admin Support
+,~01326a7a95a824e410,Minas,temporary,19.00,Armenia,default,45,IT & Networking
+,~01856a6be321faacb0,Kelvin,temporary,20.00,Malaysia,none,none,Translation
+,~0110fe2dbf33b7ab38,Abdelrhman,temporary,3.33,Egypt,none,none,Design & Creative
+,~012d31c15f8b28a444,Carolyn,temporary,24.00,United States,default,312,Writing
+,~01f291479d2ac12849,Claudia,temporary,32.00,United States,default,48,Writing

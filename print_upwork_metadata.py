@@ -3,7 +3,6 @@ import httplib2
 import oauth2
 import urllib3
 import json
-from apscheduler.schedulers.background import BlockingScheduler
 import logging
 
 logging.basicConfig()
