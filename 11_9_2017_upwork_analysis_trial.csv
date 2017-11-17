@@ -1,15 +1,101 @@
-user_count,worker_id,first_name,gender,bill_rate,country,education,work_experience,job_category
-,~019ef3758cf73d289c,Valentina,temporary,13.00,Spain,default,7,Design & Creative
-,~014c24de20d2446d42,Marwen,temporary,15.00,Spain,none,69,"Web, Mobile & Software Dev"
-,~01f5a19ca9880b867f,Bruno,temporary,28.89,Italy,default,97,"Web, Mobile & Software Dev"
-,~0191a24ec4aadf154b,Matt,temporary,84.00,United Kingdom,none,none,Design & Creative
-,~019309dfcb2b02ed10,Orkun,temporary,30.00,Turkey,default,74,Design & Creative
-,~01dc5d676329574590,Ganang,temporary,30.00,Indonesia,default,108,Design & Creative
-,~016e70f671e01d08f5,Yash,temporary,18.00,India,default,43,"Web, Mobile & Software Dev"
-,~0193675f0ca4d4c14a,Alex,temporary,20.00,Ukraine,none,none,Design & Creative
-,~0125bee9e4f17ef78e,Rayhan,temporary,16.00,France,default,14,Admin Support
-,~01326a7a95a824e410,Minas,temporary,19.00,Armenia,default,45,IT & Networking
-,~01856a6be321faacb0,Kelvin,temporary,20.00,Malaysia,none,none,Translation
-,~0110fe2dbf33b7ab38,Abdelrhman,temporary,3.33,Egypt,none,none,Design & Creative
-,~012d31c15f8b28a444,Carolyn,temporary,24.00,United States,default,312,Writing
-,~01f291479d2ac12849,Claudia,temporary,32.00,United States,default,48,Writing
+user_count,worker_id,first_name,bill_rate,country,country_id,degree,education,work_experience,job_category,job_category_id
+1,~019ef3758cf73d289c,Valentina,13.00,Spain,0,Bachelor of Arts (B.A.),Bachelor,0,Design & Creative,0
+2,~014c24de20d2446d42,Marwen,15.00,Spain,0,"[u""Engineer's degree"", 'none']",None,4,"Web, Mobile & Software Dev",1
+3,~01f5a19ca9880b867f,Bruno,28.89,Italy,1,"[u'Bachelor of Engineering (B.Eng.)', u'High School']",Bachelor,7,"Web, Mobile & Software Dev",1
+4,~0191a24ec4aadf154b,Matt,84.00,United Kingdom,2,Error: No education,None,0,Design & Creative,0
+5,~019309dfcb2b02ed10,Orkun,30.00,Turkey,3,Bachelor of Fine Arts (B.F.A.),Bachelor,9,Design & Creative,0
+6,~01dc5d676329574590,Ganang,30.00,Indonesia,4,Bachelors,Bachelor,9,Design & Creative,0
+7,~016e70f671e01d08f5,Yash,18.00,India,5,Bachelor of Engineering (B.Eng.),Bachelor,3,"Web, Mobile & Software Dev",1
+8,~0193675f0ca4d4c14a,Alex,20.00,Ukraine,6,"['none', 'none']",None,0,Design & Creative,0
+9,~0125bee9e4f17ef78e,Rayhan,16.00,France,7,Bachelor of Business Administration (B.B.A.),Bachelor,0,Admin Support,2
+10,~01326a7a95a824e410,Minas,19.00,Armenia,8,,None,3,IT & Networking,3
+11,~01856a6be321faacb0,Kelvin,20.00,Malaysia,9,Error: No education,None,0,Translation,4
+12,~0110fe2dbf33b7ab38,Abdelrhman,3.33,Egypt,10,"['none', 'none']",None,0,Design & Creative,0
+13,~012d31c15f8b28a444,Carolyn,24.00,United States,11,"[u'Bachelor of Education (B.Ed.)', u'Other']",None,17,Writing,5
+14,~01f291479d2ac12849,Claudia,32.00,United States,11,"[u'Bachelor of Arts (B.A.)', u""Associate's degree""]",Bachelor,3,Writing,5
+15,~014f11f57a6973d78f,Reni,17.00,India,5,Bachelor of Science (B.S.),Bachelor,2,none,6
+16,~0122382c467251a908,SAM,16.00,Pakistan,12,B.com,None,12,Engineering & Architecture,7
+17,~01c2f031bda31c9b00,Julie,22.00,United States,11,,None,8,Design & Creative,0
+18,~0162fac3c259bb56da,GuanYu,25.00,China,13,Master of Education (M.Ed.),Master,0,"Web, Mobile & Software Dev",1
+19,~01308feb9d7b9d7bdb,Anton,20.00,Spain,0,,None,8,"Web, Mobile & Software Dev",1
+20,~0140d9893daf53a72f,Ebrahim,20.00,United Arab Emirates,14,"[u'Doctor of Philosophy (Ph.D.)', u'Master of Arts (M.A.)']",Doctorate,8,Translation,4
+21,~01875a1335a16fcbc7,Andrea,13.00,Spain,0,"['none', 'none']",None,1,Translation,4
+22,~01704b4adff128d067,Tania,16.50,Spain,0,"[u'Doctor of Philosophy (Ph.D.)', u'Master of Education (M.Ed.)', u'Master of Laws (LL.M.)', u'Bachelor of Arts (B.A.)', u'Bachelor of Arts (B.A.)', u'Bachelor of Laws (LL.B.)']",Doctorate,3,Translation,4
+23,~01fd55e8ed7f1052f1,Luca,24.00,Spain,0,"['none', u'High school degree']",None,10,Design & Creative,0
+24,~015a54263fe4b984a7,Ruta,20.00,Lithuania,15,Bachelor of Applied Science (B.A.Sc.),Bachelor,1,Writing,5
+25,~01ba9411606f3153b7,Bojan,35.00,Montenegro,16,Master of Computer Applications (M.C.A.),Master,12,"Web, Mobile & Software Dev",1
+26,~01fbcdd5ace9b38b3d,Ha,15.00,Vietnam,17,"[u'Master of Philosophy (M.Phil.)', u'Bachelor of Arts (B.A.)']",Master,6,Admin Support,2
+27,~015a93cf1db2182bfa,Alexandre,25.00,Canada,18,Master of Computer Applications (M.C.A.),Master,20,"Web, Mobile & Software Dev",1
+28,~0164a9fbbc6b7be794,Sean,10.60,United States,11,Bachelor of Arts (B.A.),Bachelor,0,Writing,5
+29,~014abfb4d22dafaeec,Bogdan,10.00,Ukraine,6,Master of Computer Applications (M.C.A.),Master,0,"Web, Mobile & Software Dev",1
+30,~011ac849229b62c62e,Anastasiya,10.00,Russia,19,,None,0,Engineering & Architecture,7
+31,~0143c6fcf24f62791d,Kwasi,80.00,South Africa,20,Bachelor of Technology (B.Tech.),Bachelor,9,"Web, Mobile & Software Dev",1
+32,~0142cb499bf9ef6076,Eugene,20.00,Vietnam,17,Bachelor of Arts (B.A.),Bachelor,0,Design & Creative,0
+33,~014d964ab4d4c9b57b,Adina,50.00,Netherlands,21,Master of Science (M.S.),Master,0,Design & Creative,0
+34,~0184f39d8b2cb412ab,Munro,22.50,United States,11,,None,0,Design & Creative,0
+35,~01b675243d9ec37e05,Jhon Mikko,8.50,Philippines,22,Bachelor of Science (B.S.),Bachelor,0,Design & Creative,0
+36,~018c25a41ca3b7840f,Daniel,25.00,United States,11,"[u'Associate of Arts and Sciences (A.A.S.)', u'Licentiate degree']",None,0,Translation,4
+37,~011a2cc6807fbeaaa6,Dave,175.00,United States,11,Bachelor of Arts (B.A.),Bachelor,30,Writing,5
+38,~01c1aae6af3223cfd3,Kevin,100.00,United States,11,,None,0,"Web, Mobile & Software Dev",1
+39,~0169a7214c061ca0bf,Uros,5.00,Serbia,23,High school degree,High School,0,Data Science & Analytics,8
+40,~01ea7711740a477303,Amany,14.00,Egypt,10,Bachelor of Engineering (B.Eng.),Bachelor,10,IT & Networking,3
+41,~01263cf7d83685f645,Adrian,20.00,Argentina,24,"[u'Bachelor of Arts (B.A.)', u'High school degree']",Bachelor,9,Translation,4
+42,~01ff8e417d468088bb,Mahmoud,20.00,Egypt,10,,None,0,Accounting & Consulting,9
+43,~011683472b5d3ab5b4,Marko,30.00,Serbia,23,Mechatronics Bachelor,Bachelor,2,Engineering & Architecture,7
+44,~01cb7fa87984b69193,Chandrakant,10.00,India,5,Engineer's degree,Master,8,"Web, Mobile & Software Dev",1
+45,~01092fe0e6f90e1e9e,MD SABBIR,20.00,Bangladesh,25,"[u'Bachelor of Engineering (B.Eng.)', u""Engineer's degree"", u'High school degree']",Master,5,IT & Networking,3
+46,~019990b7df8e170ae3,Jocelyn Cori,15.00,United States,11,Bachelor of Science (B.S.),Bachelor,4,Customer Service,10
+47,~0196d0df4dbf75f263,Rafiqul,4.00,Bangladesh,25,Bachelors,Bachelor,11,Accounting & Consulting,9
+48,~013b16bcd8b9ff8c12,Daniel,44.00,Russia,19,Bachelor of Arts (B.A.),Bachelor,1,"Web, Mobile & Software Dev",1
+49,~01cd724af57f014f37,Dmitriy,17.00,Ukraine,6,,None,4,"Web, Mobile & Software Dev",1
+50,~010a4eca11ede0e7da,Huria,20.00,Canada,18,"[u'Master of Fine Arts (M.F.A.)', u'Bachelor of Fine Arts (B.F.A.)']",Master,7,Design & Creative,0
+51,~013c55ad702b0f2a2c,Rita Lorraine,40.00,United States,11,"[u'Master of Science, School Psychology', u'Bachelor of Science, Special Ed/Elementary Ed']",Master,5,Writing,5
+52,~01197c61f805b1da44,Alena,16.00,Germany,26,"[u'Master of Arts (M.A.)', u'Bachelor of Arts (B.A.)']",Master,0,Writing,5
+53,~01bd7cfc0529ffdb34,Sarah,15.00,United States,11,"[u'Bachelor of Arts (B.A.)', u'Associate of Arts (A.A.)']",Bachelor,8,Admin Support,2
+54,~01a2188f654082591e,Carlos,11.50,Venezuela,27,Bachelor of Engineering (B.Eng.),Bachelor,46,Translation,4
+55,~01156739562f92b4e7,Dammy,25.00,United Kingdom,2,Bachelor of Science (B.S.),Bachelor,0,"Web, Mobile & Software Dev",1
+56,~0128d1d3417ae03467,Ninh,10.00,Vietnam,17,Bachelor of Arts (B.A.),Bachelor,3,Design & Creative,0
+57,~0175e07cc35e1146de,Chebeleu,15.00,Romania,28,Master of Architecture (M.Arch.),Master,4,Engineering & Architecture,7
+58,~0193a5ed63a8a7c10f,Michelle,15.00,Australia,29,"['none', 'none']",None,12,Admin Support,2
+59,~01e8f994850936cd7d,Christopher,55.56,United States,11,Bachelor of Arts (B.A.),Bachelor,3,Data Science & Analytics,8
+60,~01cfd541f2cd3b8260,Dawid,6.00,Poland,30,Error: No education,None,0,Translation,4
+61,~01569a9a831222e7d5,Nichole Marie,20.00,United States,11,High school degree,High School,0,Admin Support,2
+62,~01a4c4d9939b87fd8f,Jose Ignacio,40.00,Argentina,24,"[u'Master of Education (M.Ed.)', 'none', u'Master of Business Administration (M.B.A.)']",None,4,Translation,4
+63,~0122ba34d0db5a009b,Nathan,45.00,Canada,18,,None,1,Admin Support,2
+64,~01f890ba1712bd4423,Asadulla,15.00,Azerbaijan,31,High school degree,High School,4,Design & Creative,0
+65,~011e2dbb6d07eec869,Emília,12.00,Slovakia,32,,None,4,Admin Support,2
+66,~01419e9c619655c29a,Omer,86.00,Thailand,33,"['none', u'Master of Science (M.S.)', u'Bachelor of Arts (B.A.)']",None,6,Accounting & Consulting,9
+67,~015b8d639f264baf08,Vladimir,31.25,Ukraine,6,Master of Computer Applications (M.C.A.),Master,7,Sales & Marketing,11
+68,~01f2cdc28810c8c108,Hussein,75.00,Egypt,10,,None,0,"Web, Mobile & Software Dev",1
+69,~01d5d59da14841aacc,Elisheva,100.00,United States,11,Bachelor of Science (B.S.),Bachelor,1,Writing,5
+70,~0139ae4d0f5b49bd63,Jacolby,40.00,United States,11,Bachelor of Business Administration (B.B.A.),Bachelor,1,Writing,5
+71,~01e8bdd1d5ac100701,Sanaul,7.00,Bangladesh,25,"[u'Master of Computer Applications (M.C.A.)', u'Bachelor of Applied Science (B.A.Sc.)']",Master,3,Sales & Marketing,11
+72,~0140cf203015c25848,David,35.00,United States,11,Bachelor of Arts (B.A.),Bachelor,1,Data Science & Analytics,8
+73,~012ee224d729455c3b,Tiffany,100.00,United States,11,"[u'Bachelor of Fine Arts (B.F.A.)', u'Associate of Arts (A.A.)', u'Bachelor of Applied Science (B.A.Sc.)']",Bachelor,3,Design & Creative,0
+74,~0166e09ba598c11f82,Tim,50.00,United States,11,Bachelor of Arts (B.A.),Bachelor,33,Design & Creative,0
+75,~016e5e88091de8d55e,Amrita,25.00,India,5,Bachelor of Engineering (B.Eng.),Bachelor,0,"Web, Mobile & Software Dev",1
+76,~016f84cb0a2e1bec44,Maya,40.00,United States,11,Bachelor of Arts (B.A.),Bachelor,2,Admin Support,2
+77,~016ca20ad46c528dc7,Dachi,3.00,Georgia,34,,None,0,Design & Creative,0
+78,~011a1a80c5654533f5,Andrey,20.00,Belarus,35,,None,9,"Web, Mobile & Software Dev",1
+79,~015b49f0b52d7f514a,Miles,4.99,United Kingdom,2,Bachelor of Arts (B.A.),Bachelor,0,Design & Creative,0
+80,~01d9f968943f2f4b2d,Alexandru,15.00,Moldova,36,Master of Technology (M.Tech.),Master,0,Design & Creative,0
+81,~01e100d8e2b0c922cc,Rastko,30.00,Serbia,23,,None,0,Design & Creative,0
+82,~0118ce85d8399b3ef4,Kylie,55.56,Thailand,33,,None,0,Design & Creative,0
+83,~01202309fd61b4f7ce,Stefan,88.89,Germany,26,Bachelor of Business Administration (B.B.A.),Bachelor,2,Sales & Marketing,11
+84,~019d25202cb3413586,Giacomo,27.50,Italy,1,,None,26,Design & Creative,0
+85,~01b5e06b3af63eea91,Oleksandr,30.00,Ukraine,6,Error: No education,None,0,"Web, Mobile & Software Dev",1
+86,~01f9f93af81803ea5c,Elvis,5.00,Bosnia and Herzegovina,37,High school degree,High School,0,"Web, Mobile & Software Dev",1
+87,~01c1b07e083f96c4ab,Jaila,10.00,Egypt,10,"[u'Master of Science (M.S.)', u'Bachelor of Science (B.S.)']",Master,8,Translation,4
+88,~01dc9bf84cf5fbb324,Diana,18.00,Ukraine,6,,None,2,Design & Creative,0
+89,~010f3cbe7cedfa70f3,Ilya,5.56,Russia,19,,None,0,Translation,4
+90,~01c0e427720dca5f4c,Jan,29.00,Philippines,22,Error: No education,None,8,Design & Creative,0
+91,~01faca59e4d2e04410,Dalibor,11.11,Serbia,23,Master's degree,Master,4,Design & Creative,0
+92,~01d9ac16d20a4e18af,Vladimir,20.00,Serbia,23,Other,None,11,Design & Creative,0
+93,~01f7d75178f6423024,Kristina,25.00,Ukraine,6,Error: No education,None,0,Design & Creative,0
+94,~01283c7a86c2650455,Illya,15.00,Ukraine,6,Master of Computer Applications (M.C.A.),Master,0,"Web, Mobile & Software Dev",1
+95,~01352fb05810dd10af,Dmytro,5.00,Ukraine,6,,None,0,Design & Creative,0
+96,~010a00ff538b184f0d,Mohamed,12.50,Russia,19,"[u'Master of Computer Applications (M.C.A.)', u'Bachelor of Engineering (B.Eng.)']",Master,0,"Web, Mobile & Software Dev",1
+97,~01549e1eaef2b2c013,Chintya Irawati,10.00,Indonesia,4,Bachelor of Education (B.Ed.),Bachelor,2,Translation,4
+98,~01af8ec5a8ae08896b,Maurice,18.00,United Kingdom,2,"[u'Bachelor of Education (B.Ed.)', u""Engineer's degree""]",Master,29,Writing,5
+99,~017b4472d7e40a6d3e,Vadim,15.00,Ukraine,6,,None,0,"Web, Mobile & Software Dev",1
+100,~01bd1927b58d8c6bb5,Christopher,50.00,United States,11,"[u'Doctor of Law (J.D.)', 'none', u'Bachelor of Arts (B.A.)']",None,6,Legal,12
