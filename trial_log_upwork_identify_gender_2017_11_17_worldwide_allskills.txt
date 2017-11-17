@@ -1,0 +1,13 @@
+We have started identifying gender in photos!
+Ran into an error in identifying gender at 19: 0
+Ran into an error in identifying gender at 45: 0
+Ran into an error in identifying gender at 46: 0
+We have started identifying gender in photos!
+Ran into an error in identifying gender at 45: 0
+Ran into an error in identifying gender at 46: 0
+We have started identifying gender in photos!
+Ran into an error saving gender to csv at 1: global name 'writer' is not defined
+We have started identifying gender in photos!
+Ran into an error in identifying gender at 45: 0
+Ran into an error in identifying gender at 46: 0
+Ran into an error in identifying gender at 79: 0
