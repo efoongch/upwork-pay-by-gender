@@ -19,7 +19,7 @@ __email__ = 'eurekafoong2020@u.northwestern.edu'
 
 class UpworkQuerier: 
     def __init__(self):
-        self.log = open('json_files/log_upwork_data_collection_2017_12_12_unitedstates_allskills.txt', 'a') # Creating a log
+        self.log = open('json_files/trial2_log_upwork_data_collection_2017_12_12_unitedstates_allskills.txt', 'a') # Creating a log
         self.log.write("We have started collecting data!" + "\n")
 
         # Connect to the database 
@@ -72,20 +72,19 @@ class UpworkQuerier:
         for worker in workers:
             user_id = worker["id"]
             user_name = worker["name"]
-            date_collected = "10_23_2017"
+            date_collected = "12_12_2017"
             
             try:
                 time.sleep(1.5) # To prevent nonce error, make sure two requests aren't being sent at the same second  
                 detailed_info = self.client.provider.get_provider(user_id) # Call the API to return detailed info on each worker 
-                # Check if the worker is from the U.S.
+                # If worker in the U.S. then add to the database
                 if(detailed_info["dev_country"] == "United States"):
-                    print "From the United States"
-                else:
-                    print "NOT AMERICAN"
-                    print detailed_info["dev_country"]
-
-                self.cur.execute("INSERT INTO trial_upwork_unitedstates_allskills_2017_12_12 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
+                    print "American"
+                    self.cur.execute("INSERT INTO trial2_upwork_unitedstates_allskills_2017_12_12 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
                                 [user_id, date_collected, user_name, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
+                    self.conn.commit()
+                else:
+                    print "Not American"
 
             except psycopg2.IntegrityError: # To prevent duplicate user_id from being added to the database
                 self.conn.rollback()
@@ -95,9 +94,6 @@ class UpworkQuerier:
                 self.log.write("Failed to parse worker: " + user_id + " because of {0}".format(err) + "\n")
                 self.log.flush()
                 print "Failed to parse worker: " + user_id + "\n"
-
-            else:
-                self.conn.commit()
 
 myObject = UpworkQuerier()
 myObject.collect_workers_basic_data()
