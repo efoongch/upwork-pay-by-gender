@@ -84,7 +84,7 @@ class UpworkQuerier:
                     print "NOT AMERICAN"
                     print detailed_info["dev_country"]
 
-                self.cur.execute("INSERT INTO upwork_unitedstates_allskills_2017_12_12 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
+                self.cur.execute("INSERT INTO trial_upwork_unitedstates_allskills_2017_12_12 (user_id, date_collected, user_name, worker, detailed_info) VALUES (%s, %s, %s, %s, %s);",
                                 [user_id, date_collected, user_name, psycopg2.extras.Json(worker), psycopg2.extras.Json(detailed_info)])
 
             except psycopg2.IntegrityError: # To prevent duplicate user_id from being added to the database
