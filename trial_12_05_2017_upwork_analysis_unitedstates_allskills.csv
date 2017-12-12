@@ -1,0 +1,304 @@
+user_count,worker_id,first_name,bill_rate,country,country_id,degree,education,education_id,work_experience,work_experience_json,job_category,job_category_id
+1,~01b404a60905b11630,Alex,40.00,United States,0,,None,0,0,"[
+  {
+    ""exp_from"": ""06/2017"", 
+    ""exp_title_raw"": ""Producer and Head Editor"", 
+    ""exp_comment"": ""I am a Freelancer for Kinetic-Studios"", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""Kinetic-Studios""
+  }, 
+  {
+    ""exp_from"": ""09/2016"", 
+    ""exp_comment"": ""I was Hired as a freelance Video Editor and Composer"", 
+    ""exp_title_raw"": ""Video Editor"", 
+    ""exp_to"": ""12/2016"", 
+    ""exp_company"": ""C.B.A""
+  }
+]",Design & Creative,0
+2,~019b9a4166816e3e16,Karol,60.00,United States,0,"['none', 'none', u'Master of Business Administration (M.B.A.)', 'none', u'Bachelor of Arts (B.A.)']",None,0,21,"[
+  {
+    ""exp_from"": ""01/2009"", 
+    ""exp_title_raw"": ""HR Business Consultant"", 
+    ""exp_comment"": ""Everything HR"", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""Decision Point Consulting""
+  }, 
+  {
+    ""exp_from"": ""02/2005"", 
+    ""exp_title_raw"": ""HR Business Partner Director"", 
+    ""exp_comment"": ""Organization Analysis, Restructure, Development and Effectiveness to improve Employee Engagement and Performance.  Included Recruitment, Leadership, Training, Employee Relations, Succession Planning and Improved HR Program Efficiencies."", 
+    ""exp_to"": ""02/2007"", 
+    ""exp_company"": ""Intermec Honeywell""
+  }, 
+  {
+    ""exp_from"": ""07/2000"", 
+    ""exp_comment"": ""Business Coaching and Consulting High Tech start-ups. HR consulting and organization creation for high tech start-ups and organization development and training for local Fortune companies"", 
+    ""exp_title_raw"": ""HR Principal Consultant and Co-Owner"", 
+    ""exp_to"": ""01/2005"", 
+    ""exp_company"": ""Business to Performance, LLC""
+  }, 
+  {
+    ""exp_from"": ""04/1996"", 
+    ""exp_comment"": ""Change Management, Recruiting and Leadership training in a chaotic environment."", 
+    ""exp_title_raw"": ""HR Sr. Mgr. and Director, Americas Operations"", 
+    ""exp_to"": ""07/2000"", 
+    ""exp_company"": ""Dell, Inc.""
+  }, 
+  {
+    ""exp_from"": ""03/1994"", 
+    ""exp_comment"": ""Start-up, Greenfield location, in which I had responsibility for sourcing, hiring and on-boarding 4,000+ all-degreed employees.  I also implemented organization design and effectiveness, performance management, leadership and manager training that resulted in 98% employee retention."", 
+    ""exp_title_raw"": ""Sr. Human Resources Manager"", 
+    ""exp_to"": ""04/1996"", 
+    ""exp_company"": ""Applied Materials, Inc.""
+  }
+]",Admin Support,1
+3,~01c245731f7c607681,Angela,75.00,United States,0,"[u'Doctor of Philosophy (Ph.D.)', u'Master of Arts (M.A.)', u'Bachelor of Laws (LL.B.)', u'Bachelor of Arts (B.A.)']",Doctorate,1,21,"[
+  {
+    ""exp_from"": ""05/2009"", 
+    ""exp_comment"": ""Consulting firm specializing in organizational and human development."", 
+    ""exp_title_raw"": ""Managing Director: Organizational and Human Development"", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""LiveInFlow Consulting LLC""
+  }, 
+  {
+    ""exp_from"": ""07/2015"", 
+    ""exp_title_raw"": ""Director of Organizational and Human Development"", 
+    ""exp_comment"": ""Lead the Organizational and Human Development functions. See profile summary for list of responsibilities."", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""SPEC Services Inc""
+  }, 
+  {
+    ""exp_from"": ""12/2014"", 
+    ""exp_comment"": ""Consultant in the Leadership and Organizational Effectiveness Division."", 
+    ""exp_title_raw"": ""Leadership and Organizational Effectiveness Consultant"", 
+    ""exp_to"": ""07/2015"", 
+    ""exp_company"": ""Alix Partners""
+  }, 
+  {
+    ""exp_from"": ""09/2011"", 
+    ""exp_title_raw"": ""Leadership Consultant and Executive Assessment Specialist"", 
+    ""exp_comment"": ""Management consultant specializing in Leadership and Executive Assessment."", 
+    ""exp_to"": ""03/2013"", 
+    ""exp_company"": ""ghSmart Inc""
+  }, 
+  {
+    ""exp_from"": ""01/2000"", 
+    ""exp_comment"": ""Lawyer specializing in Environmental Law and Climate Change."", 
+    ""exp_title_raw"": ""Lawyer: Environmental Law and Climate Change"", 
+    ""exp_to"": ""08/2010"", 
+    ""exp_company"": ""Various law firms""
+  }
+]",Writing,2
+4,~01ccfbbd6370706f4c,Bella,25.00,United States,0,"[u'Master of Arts, English', u'Bachelor of Arts, English']",Master,2,4,"{
+  ""exp_from"": ""07/2013"", 
+  ""exp_comment"": """", 
+  ""exp_title_raw"": ""Writing Lab Consultant"", 
+  ""exp_to"": ""Present"", 
+  ""exp_company"": ""Cornell University""
+}",Writing,2
+5,~01e3039bd8fb59602c,Brandon,120.00,United States,0,"[u'Master of Business Administration (M.B.A.)', u'Bachelor of Science (B.S.)']",Master,2,error,"[
+  {
+    ""exp_from"": ""02/2015"", 
+    ""exp_title_raw"": ""Business Writing Consultant & Founder"", 
+    ""exp_comment"": ""Help clients communicate their expertise in writing purposefully, practically, and precisely. Provide diverse business and technical writing services that provide business utility to clients."", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""Write Precisely""
+  }, 
+  {
+    ""exp_from"": ""11/2014"", 
+    ""exp_title_raw"": ""Business Communication Consultant"", 
+    ""exp_comment"": ""Technical writing project (ongoing): Provide technical writing services that focus on writing operations & maintenance manuals covering drilling products in the oil & gas sector for both field operators and shop personnel."", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""Weatherford U.S.""
+  }, 
+  {
+    ""exp_from"": ""03/2013"", 
+    ""exp_comment"": ""Technical writing project (ongoing): Produce operations & maintenance documentation covering top drives and other drilling equipment for customers.\n\nProduce and edit other documents, including manuals for engineering software.\n\nCollaborate with the senior mechanical engineer to devise a modular documentation content strategy for a family of drilling products; refine and communicate the content strategy in a compelling PowerPoint presentation for the chief operating officer to use to convince the CEO to proliferate the strategy across other divisions.\n\n(PRESENTATION WAS A SUCCESS. STRATEGY WAS ROLLED OUT TO OTHER DIVISIONS.)"", 
+    ""exp_title_raw"": ""Business Communication Consultant"", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""AXON Drilling Products""
+  }, 
+  {
+    ""exp_from"": ""05/2014"", 
+    ""exp_title_raw"": ""Business Communication Consultant"", 
+    ""exp_comment"": ""Technical writing project: Improve documentation through substantive edits and creation of additional content to ensure usability of geoimaging software/hardware to decrease re-flights for customers. Establish document templates and styles for manuals to ensure consistent voice, usage, and company branding. Work within $5,000 budget to deliver four effective documents for customers to use to operate products successfully."", 
+    ""exp_to"": ""08/2014"", 
+    ""exp_company"": ""Visual Intelligence""
+  }, 
+  {
+    ""exp_from"": ""07/2012"", 
+    ""exp_title_raw"": ""Technical Communication Consultant"", 
+    ""exp_comment"": ""Business writing / technical writing project: Create a comprehensive department manual (internal documentation) for the Employee Health & Well-being department to cover the new occupational health and safety software, as well as department policies and procedures.\n\nConsult with multiple subject matter experts to capture department policies and procedures. Perform walkthroughs (procedure testing) of newly-created software procedures, and elicit feedback from users to ensure instructions are accurate, effective, and easily understood.\n\nPartner with the department to keep the department manual updated as policies and procedures change to address evolving business needs."", 
+    ""exp_to"": ""05/2014"", 
+    ""exp_company"": ""The University of Texas MD Anderson Cancer Center""
+  }, 
+  {
+    ""exp_from"": ""01/2014"", 
+    ""exp_title_raw"": ""Business Communication Consultant"", 
+    ""exp_comment"": ""Business writing project: Craft a marketing plan for business expansion into the US eLearning market for a small, UK-based firm. Research the US market for eLearning statistics, and perform an in-depth analysis of relevant competitors. Strategize a specific action plan for establishing market presence and ensuring successful marketing efforts."", 
+    ""exp_to"": ""01/2014"", 
+    ""exp_company"": ""Creative Learning Systems""
+  }, 
+  {
+    ""exp_from"": ""04/2012"", 
+    ""exp_title_raw"": ""Technical Editor/Communicator"", 
+    ""exp_comment"": ""Technical editing project: Team-create maintenance documentation for shop personnel to disassemble, test, and reassemble tools received from field sites.\n\nEdit multiple procedural documentation to ensure consistency and usability of material.\n\nCoordinate project activities and communication between team members; manage stakeholder/client expectations; ensure project remains within defined scope and budget; and liaise with various vendors."", 
+    ""exp_to"": ""08/2013"", 
+    ""exp_company"": ""Direct Drilling Company""
+  }, 
+  {
+    ""exp_from"": ""03/2012"", 
+    ""exp_title_raw"": ""Technical Writer/Communicator"", 
+    ""exp_comment"": ""Business writing project: Create multiple deliverables for a NASA IT program, including the first annual report describing all 25 projects funded to date and 14 upcoming projects. Collaborate with multiple chief technology officers and project managers (PMs) across the US to gather information pertaining to various projects; compile into one concise 75-page annual report to deliver to the IT management board to elicit continued funding.\n\n(REPORT SUCCESSFULLY GARNERED ~$750,000 IN FUNDING!)\n\nIn addition, produce document templates for PMs, including a technical position paper, white paper, and business case. Craft a 700-word article for a NASA IT publication."", 
+    ""exp_to"": ""09/2012"", 
+    ""exp_company"": ""National Aeronautics and Space Administration (NASA)""
+  }, 
+  {
+    ""exp_from"": ""03/2012"", 
+    ""exp_comment"": ""Business writing project: Edit and organize 500 pages of policies and procedures and company-related content in an outdated, incomplete corporate manual; separate into \""company manual\"" and \""personnel manual\"" to satisfy diverging purposes. Create additional content to satisfy requirements for document completion."", 
+    ""exp_title_raw"": ""Technical Editor/Communicator"", 
+    ""exp_to"": ""06/2012"", 
+    ""exp_company"": ""Amazing Spaces""
+  }, 
+  {
+    ""exp_from"": ""01/2012"", 
+    ""exp_title_raw"": ""Technical Writer/Communicator"", 
+    ""exp_comment"": ""Technical writing project: Rewrite and restructure technical user manuals (one 50 pages, one 110 pages) for geoimaging system and associated image processing software. Interview multiple subject matter experts to gain additional information to complete the manuals."", 
+    ""exp_to"": ""05/2012"", 
+    ""exp_company"": ""Visual Intelligence""
+  }, 
+  {
+    ""exp_from"": ""06/2010"", 
+    ""exp_comment"": ""Technical writing & editing project: Review and edit over 1,000 pages of operations and maintenance content for a $200 million power generation engineering project. Rewrite three barge system manuals (approximately 200 pages). Interview subject matter experts to gather additional information to include in the rewrite of the documents. Create templates and guidance documents based on project needs."", 
+    ""exp_title_raw"": ""Technical Writer/Editor/Communicator"", 
+    ""exp_to"": ""08/2011"", 
+    ""exp_company"": ""Waller Marine/CITGO""
+  }
+]",Writing,2
+6,~017a8ce5f5277a70f8,David,135.00,United States,0,"[u'Master of Science (M.S.)', u'Bachelor of Science (B.S.)']",Master,2,12,"{
+  ""exp_from"": ""01/2006"", 
+  ""exp_title_raw"": ""Founding Partner / Engineer"", 
+  ""exp_comment"": ""IDM Integration is an Identity Management company specializing in SAML and SSO integration"", 
+  ""exp_to"": ""Present"", 
+  ""exp_company"": ""IDM Integration""
+}",IT & Networking,3
+7,~01f9b6ea7dce82200c,Lancelot,70.00,United States,0,Bachelor of Technology (B.Tech.),Bachelor,3,12,"[
+  {
+    ""exp_from"": ""12/2016"", 
+    ""exp_comment"": """", 
+    ""exp_title_raw"": ""Managing Partner"", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""Shubout Technology""
+  }, 
+  {
+    ""exp_from"": ""05/2015"", 
+    ""exp_title_raw"": ""Vice President"", 
+    ""exp_comment"": """", 
+    ""exp_to"": ""12/2016"", 
+    ""exp_company"": ""Neuberger Berman""
+  }, 
+  {
+    ""exp_from"": ""07/2007"", 
+    ""exp_comment"": """", 
+    ""exp_title_raw"": ""Vice President"", 
+    ""exp_to"": ""05/2015"", 
+    ""exp_company"": ""Fred Alger Management""
+  }, 
+  {
+    ""exp_from"": ""03/2005"", 
+    ""exp_comment"": """", 
+    ""exp_title_raw"": ""Senior Business Analyst"", 
+    ""exp_to"": ""07/2007"", 
+    ""exp_company"": ""JPMorgan Chase""
+  }
+]","Web, Mobile & Software Dev",4
+8,~01f93508c701a69482,Matt,50.00,United States,0,Bachelors,Bachelor,3,17,"[
+  {
+    ""exp_from"": ""08/2008"", 
+    ""exp_comment"": ""\u2022\tPR, Promotions, Booking and Management for Portland-based musicians and artists\n\u2022\tFreelance copywriting services for numerous clients\n\u2022\tAdvise small businesses and entrepreneurs on PR outreach, providing all assets necessary for them to succeed including press releases, media lists PR plans and consultation calls"", 
+    ""exp_title_raw"": ""Publicist"", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""Self - Noctilucent Arts""
+  }, 
+  {
+    ""exp_from"": ""06/2004"", 
+    ""exp_comment"": ""\u2022\tDirected publicity for the Playboy Entertainment Group (including Playboy TV, Playboy Radio, Playboy Mobile and Playboy DVD)\n\u2022\tPrimary spokesman for the Entertainment Group\n\u2022\tCrafted senior executive talking points; supervised all media interviews\n\u2022\tDirected and managed outside PR agencies\n\u2022\tWrote press releases, bios, production notes, PR plans\n\u2022\tPitched and secured talent appearances and media interviews\n\u2022\tPlanned and produced EPKs and supervised on-location B-roll camera crews"", 
+    ""exp_title_raw"": ""Director, Publicity"", 
+    ""exp_to"": ""06/2008"", 
+    ""exp_company"": ""Playboy Entertainment Group""
+  }, 
+  {
+    ""exp_from"": ""06/2000"", 
+    ""exp_comment"": ""\u2022\tPlanned publicity strategy and managed multiple PR agency teams to secure trade and consumer media coverage (electronic, print, online) of individual USHV titles\n\u2022\tManaged publicity budgets in excess of $100K\n\u2022\tManaged and organized multi-city tours with participating talent, including public event appearances and interviews with local radio, TV and print outlets"", 
+    ""exp_title_raw"": ""Manager, Publicity"", 
+    ""exp_to"": ""01/2004"", 
+    ""exp_company"": ""Universal Studios""
+  }
+]",Writing,2
+9,~010ce38df6bfb4bf87,Gautam,50.00,United States,0,"[u""Master's degree"", u'Post Doctoral', u'Doctor of Philosophy (PhD)', u'Post doc']",None,0,36,"[
+  {
+    ""exp_from"": ""01/1999"", 
+    ""exp_title_raw"": ""Director Business Development"", 
+    ""exp_comment"": ""* Marketing Sales and Licensing of POC devices in the International markets through Department of Commerce supported programs in Europe and India.\n* Participated in R&D Rapid Point Of Care Immuno diagnostic Lateral Flow tests for Infectious Diseases"", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""AccuDx Inc""
+  }, 
+  {
+    ""exp_from"": ""01/2014"", 
+    ""exp_comment"": ""Grants and Solicitations science and education writer"", 
+    ""exp_title_raw"": ""Sr. Writer"", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""University of California, San Diego UCSD""
+  }, 
+  {
+    ""exp_from"": ""01/2011"", 
+    ""exp_title_raw"": ""Chairman"", 
+    ""exp_comment"": ""Multi disciplinary background of Biotechnology / Clinical/ Optics/ / Holography/ Imaging that has resulted in several grant funded basic research novelties into commercial products in diagnostic and security related disciplines with protected patents  and IP."", 
+    ""exp_to"": ""01/2013"", 
+    ""exp_company"": ""Coded Imagery""
+  }, 
+  {
+    ""exp_from"": ""01/2003"", 
+    ""exp_title_raw"": ""President"", 
+    ""exp_comment"": ""Security Industry based start up with a patented technology to place covert marks under the surface of reflective or transmissive surfaces.Have recieved NSF funded research based projects to create a security patent based platform that enables ID cards higher security."", 
+    ""exp_to"": ""01/2011"", 
+    ""exp_company"": ""Coded Imagery Inc""
+  }, 
+  {
+    ""exp_from"": ""01/2000"", 
+    ""exp_comment"": ""* Technology Transfer and Licensing Agreements, Joint Transfers and appropriate Regulatory cleared documents for R & D developmental programs \n* Preparation of Patents relating to Diagnostic Tests with Optical Disc and CD drive platform and provided Investor presentations for seeking funding\n* Development of CD based microarray and Lateral Flow tests for infectious diseases such as AIDS and a Cardiac marker panel that could be performed on a CD (Lab on a CD) and interrogated by a common PC."", 
+    ""exp_title_raw"": ""Senior Project Manager"", 
+    ""exp_to"": ""01/2003"", 
+    ""exp_company"": ""Burstein Technology""
+  }, 
+  {
+    ""exp_from"": ""01/1998"", 
+    ""exp_title_raw"": ""Sr. R&D Scientist"", 
+    ""exp_comment"": ""* Supervised and managed research groups that looked at biochemical markers in Neurodegenerative and Infectious diseases - and written Technical Sheets for Clinical Tests and marketing articles for Medical specialists\n * Marketed Neurodiagnostic tests to Neurologists by giving CME presentation"", 
+    ""exp_to"": ""01/1999"", 
+    ""exp_company"": ""MRL/Focus""
+  }, 
+  {
+    ""exp_from"": ""01/1995"", 
+    ""exp_comment"": ""* Researched Biomarker discovery for Clinical Reference Laboratory Test\n* Actively involved in technology transfers, negotiating licensing agreements \n* CLIA documentation of Esoteric Medical Tests and FDA Clinical trials \n* Trained sales people to present clinical tests to Doctors and Hospital staff."", 
+    ""exp_title_raw"": ""R&D Scientist"", 
+    ""exp_to"": ""01/1998"", 
+    ""exp_company"": ""Specialty Laboratories""
+  }
+]",Writing,2
+10,~01cbe2ab4416093a68,Margaret,100.00,Australia,1,"[u'Master of Education (M.Ed.)', 'none', u'Bachelor of Arts (B.A.)']",None,0,27,"[
+  {
+    ""exp_from"": ""10/1993"", 
+    ""exp_comment"": """", 
+    ""exp_title_raw"": ""Freelance writer, communications, events, media specialist"", 
+    ""exp_to"": ""Present"", 
+    ""exp_company"": ""Various as a freelance writer and communications specialist""
+  }, 
+  {
+    ""exp_from"": ""08/1990"", 
+    ""exp_title_raw"": ""Staff Journalist"", 
+    ""exp_comment"": ""Covered general news, business, property, politics, features.\nStories regularly featured on front page and early general news"", 
+    ""exp_to"": ""09/1993"", 
+    ""exp_company"": ""Sunday Age newspaper - part of The Age""
+  }
+]",Sales & Marketing,5
