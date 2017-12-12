@@ -17,4 +17,4 @@ client = upwork.Client(public_key, secret_key,
                       oauth_access_token=oauth_access_token,
                       oauth_access_token_secret=oauth_access_token_secret)
 
-print json.dumps(client.provider_v2.get_regions_metadata(), indent=2)
+print json.dumps(client.provider.get_regions_metadata(), indent=2)
