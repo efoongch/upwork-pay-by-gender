@@ -199,77 +199,78 @@ class UpworkDataFormatter:
         if (type(work_experience_list) is list):
             count = 0
             total_overlap = 0
+            
             for experience in work_experience_list:
-                print "This is our first work experience"
-                start_date = experience["exp_from"]
-                end_date = experience["exp_to"]
+                start_date = experience[0]
+                end_date = experience[1]
                 if (end_date == "Present"):
-                    end_date = self.present_date
+                    end_date = present_date
                 start_datetime = datetime.datetime.strptime(start_date, "%m/%Y")
                 end_datetime = datetime.datetime.strptime(end_date, "%m/%Y")
-                work_experience_array.append([start_datetime, end_datetime])
-                
-                experience_duration = (end_datetime - start_datetime).days
-                total_experience += experience_duration
-            
+
+                if (start_datetime > end_datetime): #If the dates are somehow flipped
+                    return "error"
+                else: 
+                    work_experience_array.append([start_datetime, end_datetime])
+                    experience_duration = (end_datetime - start_datetime).days
+                    total_experience += experience_duration
+
             while (count < len(work_experience_array) - 1): # Check for overlap in work experience 
-                start_newer = work_experience_array[count][0]
-                end_newer = work_experience_array[count][1]
-                start_older = work_experience_array[count+1][0]
-                end_older = work_experience_array[count+1][1] 
-                
-                if (end_newer == end_older): # Pattern 1
-                    newer_duration = (end_newer - start_newer).days
-                    older_duration = (end_older - start_older).days
-                    overlap = min(newer_duration, older_duration)
-                    total_overlap += overlap 
-                    count += 1
-                    print "Pattern 1"
-                    print overlap
-                
-                elif(start_older == start_newer): # Pattern 2
-                    overlap = (end_older - start_older).days
-                    total_overlap += overlap 
-                    count += 1
-                    print "Pattern 2"
-                    print overlap
-                
-                elif(start_newer < start_older and end_newer > end_older): # Pattern 3
-                    overlap = (end_older - start_older).days
-                    total_overlap += overlap 
-                    count += 1
-                    print "Pattern 3"
-                    print overlap
-                
-                elif(start_newer > start_older and end_newer > end_older and end_older > start_newer): # Pattern 4
-                    overlap = (end_older - start_newer).days
-                    total_overlap += overlap 
-                    count += 1
-                    print "Pattern 4"
-                    print overlap 
-                        
-                else:
-                    print "No overlap"
-                    count += 1
+                # While current index + offset < len
+                offset = 1
+
+                while (offset + count < len(work_experience_array)): 
+
+                    # Check which of the two end dates are the newest and assign appropriate values
+                    end_date1 = work_experience_array[count][1]
+                    end_date2 = work_experience_array[count + offset][1]
                     
+                    if (end_date2 <= end_date1):
+                        start_newer = work_experience_array[count][0]
+                        end_newer = work_experience_array[count][1]
+                        start_older = work_experience_array[count + offset][0]
+                        end_older = work_experience_array[count + offset][1] 
+                    
+                    elif (end_date2 > end_date1):
+                        start_newer = work_experience_array[count + offset][0]
+                        end_newer = work_experience_array[count + offset][1]
+                        start_older = work_experience_array[count][0]
+                        end_older = work_experience_array[count][1]
+                    
+                    # Check for patterns as usual 
+                    if (end_newer == end_older): # Pattern 1
+                        newer_duration = (end_newer - start_newer).days
+                        older_duration = (end_older - start_older).days
+                        overlap = min(newer_duration, older_duration)
+                        total_overlap += overlap 
+                        offset += 1
+
+                    elif(start_older == start_newer): # Pattern 2
+                        overlap = (end_older - start_older).days
+                        total_overlap += overlap 
+                        offset += 1
+
+                    elif(start_newer < start_older and end_newer > end_older): # Pattern 3
+                        overlap = (end_older - start_older).days
+                        total_overlap += overlap 
+                        offset += 1
+
+                    elif(start_newer > start_older and end_newer > end_older and end_older > start_newer): # Pattern 4
+                        overlap = (end_older - start_newer).days
+                        total_overlap += overlap 
+                        offset += 1
+
+                    else:
+                        offset += 1
+
+                count += 1
+
+            print "Total experience before overlap in months: {0}".format(total_experience/30)
+            print "Total overlap in months: {0}".format(total_overlap/30)
             total_experience = (total_experience - total_overlap)/30
+            print "Total experience after overlap in months: {0}".format(total_experience)
             total_experience = total_experience/12 # Convert to years
-            
-            return total_experience
-            
-        elif (type(work_experience_list) is dict):
-            print "is dict"
-            start_date = work_experience_list["exp_from"]
-            end_date = work_experience_list["exp_to"]
-            if (end_date == "Present"):
-                end_date = self.present_date
-            start_datetime = datetime.datetime.strptime(start_date, "%m/%Y")
-            end_datetime = datetime.datetime.strptime(end_date, "%m/%Y")
-            
-            
-            
-            total_experience = ((end_datetime - start_datetime).days)/30
-            total_experience = total_experience/12 # Convert to years
+            print "Total experience after overlap in years: {0}".format(total_experience)
             
             return total_experience
         
