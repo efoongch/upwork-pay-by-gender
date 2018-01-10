@@ -22,11 +22,11 @@ class UpworkDataFormatter:
     
     def __init__(self):
         # Settings
-        self.present_date = "11/2017" # This is the month in which the data was collected
-        self.all_data_file_name = '11_29_2017_upwork_analysis_unitedstates_allskills.csv' # Filename for all data
-        self.gender_data_file_name = '11_29_2017_upwork_gender_analysis_unitedstates_allskills.csv' # Filename for gender data
-        self.data_log_file_name = 'log_upwork_data_analysis_2017_11_29_unitedstates_allskills.txt'
-        self.gender_log_file_name = "log_upwork_identify_gender_2017_11_29_unitedstates_allskills.txt"
+        self.present_date = "10/2017" # This is the month in which the data was collected
+        self.all_data_file_name = './csv_files/10_21_2017_upwork_analysis_worldwide_allskills.csv' # Filename for all data
+        self.gender_data_file_name = './csv_files/11_29_2017_upwork_gender_analysis_unitedstates_allskills.csv' # Filename for gender data
+        self.data_log_file_name = './log_files/log_upwork_data_analysis_2017_10_21_worldwide_allskills.txt'
+        self.gender_log_file_name = "./log_files/log_upwork_identify_gender_2017_11_29_unitedstates_allskills.txt"
         self.github_photo_path = 'https://raw.githubusercontent.com/efoongch/upwork-pay-by-gender/master/resized_profile_photos/resized_images_unitedstates_allskills_2017_11_01/'
         
         # Write a log
@@ -43,7 +43,7 @@ class UpworkDataFormatter:
         psycopg2.extensions.register_adapter(dict, psycopg2.extras.Json)
         
         # Get detailed_info from workers in our database
-        self.cur.execute("SELECT detailed_info FROM upwork_unitedstates_allskills_2017_11_01;")
+        self.cur.execute("SELECT detailed_info FROM upwork_worldwide_allskills_2017_10_21;")
         
         # Initialize arrays for Causal Analysis 
         self.user_count = 1
@@ -80,17 +80,18 @@ class UpworkDataFormatter:
                     job_category = self.identify_job_category(user)
                     job_category_id = self.encode_category(job_category, self.job_category_id_list)
             
-                    writer.writerow({'user_count': user_count, 'worker_id': worker_id, 'first_name': first_name,
+                    writer.writerow({'user_count': self.user_count, 'worker_id': worker_id, 'first_name': first_name,
                                  'bill_rate': bill_rate, 'country': country, 'country_id': country_id, 'degree': degree, 'education': education, 
                                  'education_id': education_id, 'work_experience': work_experience, 'job_category': job_category, 'job_category_id': job_category_id})
                 except:
                     print "Ran into some error at user {0}".format(self.user_count)
-                    print json.dumps(user[0], indent=2)
+                    #print json.dumps(user[0], indent=2)
                     
-                    writer.writerow({'user_count': user_count, 'worker_id': "error", 'first_name': "error",
+                    writer.writerow({'user_count': self.user_count, 'worker_id': "error", 'first_name': "error",
                                  'bill_rate': "error", 'country': "error", 'country_id': self.error_country_id, 'degree': "error", 'education': "error", 
                                  'education_id': self.error_education_id, 'work_experience': "error", 'job_category': "error", 'job_category_id': self.error_job_category_id})
                     
+                print "Finished writing data for {0}".format(self.user_count)
                 self.user_count += 1
     
     def save_gender_to_csv(self): # Identify gender of users in photos that have already been pushed to GitHub 
@@ -187,24 +188,24 @@ class UpworkDataFormatter:
     def calculate_work_experience(self, user):
         total_experience = 0
         work_experience_array = []
+        present_date = "11/2017"
         
         try: 
             work_experience_list = user[0]["experiences"]["experience"]
-            print "were able to find work experiences"
             
         except:
-            print "we did not find work experiences"
             return 0
         
         if (type(work_experience_list) is list):
             count = 0
             total_overlap = 0
             
+
             for experience in work_experience_list:
-                start_date = experience[0]
-                end_date = experience[1]
+                start_date = experience["exp_from"]
+                end_date = experience["exp_to"]
                 if (end_date == "Present"):
-                    end_date = present_date
+                    end_date = self.present_date
                 start_datetime = datetime.datetime.strptime(start_date, "%m/%Y")
                 end_datetime = datetime.datetime.strptime(end_date, "%m/%Y")
 
@@ -224,19 +225,19 @@ class UpworkDataFormatter:
                     # Check which of the two end dates are the newest and assign appropriate values
                     end_date1 = work_experience_array[count][1]
                     end_date2 = work_experience_array[count + offset][1]
-                    
+
                     if (end_date2 <= end_date1):
                         start_newer = work_experience_array[count][0]
                         end_newer = work_experience_array[count][1]
                         start_older = work_experience_array[count + offset][0]
                         end_older = work_experience_array[count + offset][1] 
-                    
+
                     elif (end_date2 > end_date1):
                         start_newer = work_experience_array[count + offset][0]
                         end_newer = work_experience_array[count + offset][1]
                         start_older = work_experience_array[count][0]
                         end_older = work_experience_array[count][1]
-                    
+
                     # Check for patterns as usual 
                     if (end_newer == end_older): # Pattern 1
                         newer_duration = (end_newer - start_newer).days
@@ -265,13 +266,32 @@ class UpworkDataFormatter:
 
                 count += 1
 
-            print "Total experience before overlap in months: {0}".format(total_experience/30)
-            print "Total overlap in months: {0}".format(total_overlap/30)
+            #print "Total experience before overlap in months: {0}".format(total_experience/30)
+            #print "Total overlap in months: {0}".format(total_overlap/30)
             total_experience = (total_experience - total_overlap)/30
-            print "Total experience after overlap in months: {0}".format(total_experience)
+            #print "Total experience after overlap in months: {0}".format(total_experience)
             total_experience = total_experience/12 # Convert to years
-            print "Total experience after overlap in years: {0}".format(total_experience)
+            #print "Total experience after overlap in years: {0}".format(total_experience)
+
+            return total_experience
             
+        elif (type(work_experience_list) is dict):
+            start_date = work_experience_list["exp_from"]
+            end_date = work_experience_list["exp_to"]
+            if (end_date == "Present"):
+                end_date = self.present_date
+            start_datetime = datetime.datetime.strptime(start_date, "%m/%Y")
+            end_datetime = datetime.datetime.strptime(end_date, "%m/%Y")
+            #print "Start date: {0}, End_date: {1}".format(start_datetime, end_datetime)
+            
+            if (start_datetime >= end_datetime):
+                return "error"
+                print "the dates were flipped or too short time"
+            
+            total_experience = ((end_datetime - start_datetime).days)/30
+            total_experience = total_experience/12 # Convert to years
+            
+            #print "Single experience: {0}".format(total_experience)
             return total_experience
         
         else: 
@@ -423,4 +443,4 @@ class UpworkDataFormatter:
         return job_category
 
 myObject = UpworkDataFormatter()
-myObject.save_gender_to_csv()
+myObject.save_all_to_csv()

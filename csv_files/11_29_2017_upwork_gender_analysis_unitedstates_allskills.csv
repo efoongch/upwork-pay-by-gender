@@ -1,0 +1,2 @@
+user_count,worker_id,face_data
+1,~019ef3758cf73d289c,"{u'error': {u'message': u'Invalid image URL or error downloading from target server. Remote server error returned: ""Response status code does not indicate success: 404 (Not Found).""', u'code': u'InvalidURL'}}"
