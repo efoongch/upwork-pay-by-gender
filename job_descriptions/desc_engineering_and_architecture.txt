@@ -1,0 +1,37 @@
+Engineering & Architecture
+
+3D Modeling & CAD
+Architecture
+Chemical Engineering
+Civil & Structural Engineering
+Contract Manufacturing
+Electrical Engineering
+Interior Design
+Mechanical Engineering
+Product Design
+
+
+Looking for cosmetic chemist to put together mascara product.
+Chemical Engineering
+
+Need a cosmetic chemist to help put together a cosmetic line. This involves putting together the formula, creating the product, ingredients list, and packaging.
+
+Skills and Expertise
+Biology Chemistry Reverse Engineering
+
+Need help with developing Nutritional Facts label for roots and bark tonic drinks/products.
+Chemical Engineering Posted 23 hours ago
+February 21, 2018
+I have a line of drinks and natural tonics that are made from tree barks, roots, and leaves that I would like to bottle and sell on the retail market. They are all natural, organic, some are fermented. I need to develop the nutrition Facts label for the products as well as list the ingredients, suggested use, cautions and proper FDA disclosures. Can you assist?
+Skills and Expertise
+Reverse Engineering
+
+Put together off-the-shelf valves and controllers
+We are looking to put together these two valves and figure a way to control them with a PC.
+https://www.vici.com/vval/hplc_an.php#6-port
+https://www.vici.com/vval/stuw.php
+We need a presentation ready prototype, sort of enclosure that houses both valves and controllers and some way of connecting to these valves via a USB cable. Likely will have to design and 3D print an enclosure, then figure the best way to connect to PC: Arduino-BCD, straight RS-232 etc. 
+We are located in Culver City, (greater Los Angeles) will strongly prefer to work with local people.
+
+Skills and Expertise
+3D Printing Arduino Electronics

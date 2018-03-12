@@ -1,0 +1,62 @@
+Data Science & Analytics
+
+A/B Testing
+Data Visualization
+Data Extraction / ETL
+Data Mining & Management
+Machine Learning
+Quantitative Analysis
+Other - Data Science & Analytics
+
+I need a scraper to get product categories and category images from a GoDaddy store
+We are in the process of migrating http://cleaningpartsdirect.comfrom the now-obsolete GoDaddy store platform over to Shopify. We need help collecting two final pieces of data:
+
+1. Category Images
+2. Product categories
+
+We believe the only way to get those data is to click through the category tree recursively and get them out from the HTML of the pages. We have exhausted several approaches, including the following:
+1. Using the CSV export that GoDaddy provides. (Had incorrect categories and no pictures)
+2. Using the search box and a list of SKUs (Has no category data)
+
+The scraper needs to return a folder of downloaded images, and two JSON documents: 
+
+One to index the category images:
+[{ "Category Name": "img-filename.jpg" }, { ... }]
+
+Another to index the product categories. Note that all we need is the "leaf" category, i.e. the bottom category in the hierarchy. See the attachment for an example where the product category is "Advance Brushes - Micromax 17B / Adfinity 17" 
+[{ "product-sku": "Category name" }, { ... }]
+
+
+Attachment Description
+----------------------------
+Category Images.png
+Screenshot from http://cleaningpartsdirect.com
+
+Product Categories.png
+'Leaf category' is highlighted
+
+Python data sampling (twitter data)
+Hello, 
+I need help with sampling some data from a server.  I have most of the code written, I need to re-structure some and edit a couple functions. Help needed ASAP. Please let me know if you're interested and I'll share the files with explanation.
+The data that needs sampling is pulled from twitter using the twitter api. So, I prefer previous knowledge of using the API.
+Note: The files are huge and hosted on a server so you'd need knowledge in dealing with iterating directories.
+
+Need an experienced BI consultant who is familiar with various dashboarding tools
+We need an experienced BI consultant who is familiar with Sisense (it is a BI dashboarding tool). This job will require taking data from the below website analytics tools and displaying it in dashboards in Sisense. 
+ 
+ 
+ 
+In addition to this, this person needs to be very familiar with website analytics - specifically user engagement and behavioral analytics. 
+ 
+They need to be familiar with the following tools:
+Google Analytics
+Full Story
+Mixpanel
+Amplitude
+Or other similar tools
+ 
+The job will include utilizing those tools to answer important questions regarding user engagement and behavior on our website (iuzeit.com). Questions which need to be answered will be provided.
+ 
+In addition to answering those questions, we will want to automate analytics and reporting on that data from all of these tools (using Sisense) so that we can reference those reports during business discussions on a weekly basis.
+ 
+Lastly, this job also requires connecting our database to Sisense (using PostgreSQL) and writing specific SQL queries related to behavioral analytics and monitoring other goals/KPIs for the company.

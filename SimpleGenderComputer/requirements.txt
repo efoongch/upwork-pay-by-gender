@@ -1,0 +1,4 @@
+unidecode
+MySQL-python
+nameparser
+unicodecsv

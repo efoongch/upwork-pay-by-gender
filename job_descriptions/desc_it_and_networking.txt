@@ -1,0 +1,80 @@
+IT & Networking
+
+Database Administration 
+ERP / CRM Software
+Information Security
+Network & System Administration
+Other - IT & Networking
+
+AWS Engineer
+Network & System Administration Renewed 19 hours ago
+Needs to hire 2 Freelancers
+Fortune 500 companies looking for seasoned AWS experts. Are you looking to build your resume and add to your A list of contracts? Then come work with us. 
+
+We are looking for individuals who are extremely knowledgeable in all of AWS systems such as: cloud infrastructure and all other AWS skills. You will be working in a highly scalable, high pace environment focusing on agile systems. As a member of the engineering team, you will be a core driver of operational excellence, innovation, and automation throughout the development cycle. Your primary responsibility will be to design, develop, and implement our new cloud management platform to ensure high service availability and stability. Big data experience and help move current local server based to cloud based.  You will be working closely with cross-functional teams within Engineering to ensure reliability, scalability and performance of the next-generation of platform.
+
+Requirements
+•	Demonstrate hands-on knowledge of cloud computing, storage and networking. Designing, provisioning and administration using best practices across multiple public cloud offerings (Azure and Amazon Web Services).
+•	Successful candidate will have experience managing and implementing Cloud architectures in a DevOps/Agile methodology.
+•	10+ years of hands-on experience managing or overseeing the management of mid to large-scale information technology projects, including complex cross-functional and cross-organizational projects.
+•	Experience managing and planning a complex multi-million dollar operating budget.
+•	Track record of successfully building and scaling all aspects of highly-available SaaS operations including: deep knowledge of infrastructure, global availability, 24x7 support, compliance, and site reliability practices.
+•	Experience operating within audit, data protection and quality standards such as ISO 27000, SOC2, FedRAMP, GDPR, and GxP.
+•	Demonstrated experience attracting, leading, and developing DevOps staff in a geographically dispersed environment.
+•	Excellent written and verbal communication skills; proven experience articulating technical concepts to all audiences, including C-level executives and customers.
+•	Outstanding interpersonal skills; proven ability to work effectively with technical contributors, management and executive leadership.
+•	Bachelor’s degree in Computer Science degree or related field or equivalent combination of industry related professional experience and education
+•	8 – 10 years of working experience designing, developing, and delivering technology solutions
+•	Working experience in the design of multi-tiered technology architecture.
+•	Experience with building reliable and robust software that tolerates and recovers from unreliable dependencies. 
+•	Expert level experience and software engineering expertise (coding, automated tests, profiling, etc). 
+•	Experience running systems on Amazon Web Services (AWS)
+•	Good experience with full lifecycle system deployments from requirements gathering to design, implementation, unit testing, system testing, release and ongoing service management.
+•	Familiarity with agile software development methods
+•	Able to effectively work in high pressure situations and handle competing priorities
+•	Working knowledge of repositories such as GitLab, Artifactory and GitHub. Log aggregation tools like Sumologic. 
+•	Experience with continuous integration/continuous deployment tools (Octopus Deploy, Jenkins, Bamboo, TeamCity, AWS Codedeploy, etc.) 
+•	You have experience with alerting systems, monitoring tools and performance metric-gathering tools.
+•	You have hands-on experience with Linux server administration and managing physical servers.
+•	You are passionate about cloud technologies and automation for replacing manual processes with a customer-driven mindset.
+•	You have experience with SQL, NoSQL, or other databases.
+•	You have experience with build automation and continuous integration (CI) tools.
+•	Ability to architect, scope out, and timeline projects
+Technology We Use:
+MS Visual Studio, SQL Server, DB2, IIS, MVC, Angular 2, REST, (AWS: Elastic Beanstalk, Aurora, DynamoDB, SNS, SQS, S3, Kinisis, EC2, ELB, etc.), HTML, CSS, Git, GitHub
+Bonus points if you have:
+•	AWS certification is a big plus
+•	Experience with Windows clusters, especially multi-datacenter deployments
+•	Experience working with business-critical operations 
+•	Experience with risk and impact assessment
+•	Proven ability to exceed goals in an innovative environment with a high rate of change
+•	You are proficient in one or more major languages such as Python, Java, Go, etc. and writing manageable, testable codes.
+
+We’re looking for talented individuals who understand and embrace professionalism and team work.  This is a 4 to 6-month project and is in Nevada, we will pay for all travel expense for you to commute in for project.
+
+
+
+Skills and Expertise
+AWS CloudFront AWS Fargate AWS Lambda
+
+
+Salesforce Web Calendar (Show a Salesforce Calendar on the Web)
+Network & System Administration Posted 21 hours ago
+I am looking for an experienced Salesforce Expert to sync one of our internal salesforce calendars with a calendar that can be showcased on our website.
+
+Skills and Expertise
+API Development Salesforce.com
+
+
+NEEDED: Network engineer/technicians for large project in Denver
+Network & System Administration Posted 1 day ago
+Needs to hire 2 Freelancers
+Seeking a Ninja WAN architect and leader to augment our team.  This position is ONSITE in Denver, CO.  Travel and expenses are available for the right person.  We would love to entertain the idea of a successful engagement leading to a long-term relationship but that's not a critical factor.
+
+Apcela provides high-performance managed networking and application delivery services to its Fortune 2000 customers.  We need two network engineers to augment our service transition team and help our Denver-based customer deploy and transition their new SD-WAN.  The successful Ninja have experience with Cisco routing and switching and, ideally, have a CCNP certification.
+
+If you know about WANs, SDWAN and have participated in the deployment of new network footprint  before and are interested in Spring in Denver (which is hard to beat) let us know!
+
+
+Skills and Expertise
+Cisco IOS Network Administration Network Monitoring Network Planning

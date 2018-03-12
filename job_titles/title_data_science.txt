@@ -1,0 +1,7 @@
+Data Science & Analytics
+A/B Testing
+Data Visualization
+Data Extraction / ETL
+Data Mining & Management
+Machine Learning
+Quantitative Analysis
