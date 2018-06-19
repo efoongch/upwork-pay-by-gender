@@ -1,0 +1,635 @@
+﻿Occupation 2010 Description,2010 Census Code,2010 SOC Code
+,0010-3540,11-0000 - 29-0000
+,,
+"Management, Business, and Financial Occupations:",0010-0950,11-0000 - 13-0000
+,,
+Management Occupations:,0010-0430,11-0000
+,,
+Chief executives,0010,11-1011
+General and operations managers,0020,11-1021
+Legislators,0030,11-1031
+Advertising and promotions managers,0040,11-2011
+Marketing and sales managers,0050,11-2020
+Public relations and fundraising managers,0060,11-2031
+Administrative services managers,0100,11-3011
+Computer and information systems managers,0110,11-3021
+Financial managers,0120,11-3031
+Compensation and benefits managers, 0135 ,11-3111  
+Human resources managers,0136,11-3121  
+Training and development managers,0137,11-3131  
+Industrial production managers,0140,11-3051
+Purchasing managers,0150,11-3061
+"Transportation, storage, and distribution managers",0160,11-3071
+"Farmers, ranchers, and other agricultural managers",0205,11-9013
+Construction managers,0220,11-9021
+Education administrators,0230,11-9030
+Architectural and engineering managers,0300,11-9041
+Food service managers,0310,11-9051
+Funeral service managers,0325,11-9061
+Gaming managers,0330,11-9071
+Lodging managers,0340,11-9081
+Medical and health services managers,0350,11-9111
+Natural sciences managers,0360,11-9121
+Postmasters and mail superintendents,0400,11-9131
+"Property, real estate, and community association managers",0410,11-9141
+Social and community service managers,0420,11-9151
+Emergency management directors,0425,11-9161
+"Managers, all other",0430,11-9199
+,,
+Business and Financial Operations Occupations:,0500-0950,13-0000
+,,
+"Agents and business managers of artists, performers, and athletes",0500,13-1011 
+"Buyers and purchasing agents, farm products",0510,13-1021 
+"Wholesale and retail buyers, except farm products",0520,13-1022 
+"Purchasing agents, except wholesale, retail, and farm products",0530,13-1023 
+"Claims adjusters, appraisers, examiners, and investigators",0540,13-1030 
+Compliance officers,0565,13-1041
+Cost estimators,0600,13-1051
+Human resources workers,0630,13-1070 
+"Compensation, benefits, and job analysis specialists",0640,13-1141
+Training and development specialists,0650,13-1151
+Logisticians,0700,13-1081 
+Management analysts,0710,13-1111 
+"Meeting, convention, and event planners",0725,13-1121 
+Fundraisers,0726,13-1131
+Market research analysts and marketing specialists,0735,13-1161
+"Business operations specialists, all other",0740,13-1199 
+Accountants and auditors,0800,13-2011 
+Appraisers and assessors of real estate,0810,13-2021 
+Budget analysts,0820,13-2031 
+Credit analysts,0830,13-2041 
+Financial analysts,0840,13-2051 
+Personal financial advisors,0850,13-2052 
+Insurance underwriters,0860,13-2053 
+Financial examiners,0900,13-2061 
+Credit counselors and loan officers,0910,13-2070 
+"Tax examiners and collectors, and revenue agents",0930,13-2081 
+Tax preparers,0940,13-2082
+"Financial specialists, all other",0950,13-2099 
+,,
+"Computer, Engineering, and Science Occupations:",1000-1965,15-0000 - 19-0000
+,,
+Computer and mathematical occupations:,1000-1240,15-0000
+,,
+Computer and information research scientists,1005,15-1111
+Computer systems analysts,1006,15-1121 
+Information security analysts,1007,15-1122
+Computer programmers,1010,15-1131 
+"Software developers, applications and systems software",1020,15-113X  
+Web developers,1030,15-1134
+Computer support specialists,1050,15-1150  
+Database administrators,1060,15-1141 
+Network and computer systems administrators,1105,15-1142  
+Computer network architects ,1106,15-1143  
+"Computer occupations, all other",1107,15-1199
+Actuaries,1200,15-2011 
+Mathematicians,1210,15-2021 
+Operations research analysts,1220,15-2031 
+Statisticians,1230,15-2041 
+Miscellaneous mathematical science occupations,1240,15-2090
+,,
+Architecture and Engineering Occupations:,1300-1560,17-0000
+,,
+"Architects, except naval",1300,17-1010 
+"Surveyors, cartographers, and photogrammetrists",1310,17-1020 
+Aerospace engineers,1320,17-2011 
+Agricultural engineers,1330,17-2021
+Biomedical engineers,1340,17-2031
+Chemical engineers,1350,17-2041 
+Civil engineers,1360,17-2051 
+Computer hardware engineers,1400,17-2061 
+Electrical and electronics engineers,1410,17-2070 
+Environmental engineers,1420,17-2081 
+"Industrial engineers, including health and safety",1430,17-2110 
+Marine engineers and naval architects,1440,17-2121 
+Materials engineers,1450,17-2131 
+Mechanical engineers,1460,17-2141 
+"Mining and geological engineers, including mining safety engineers",1500,17-2151 
+Nuclear engineers,1510,17-2161 
+Petroleum engineers,1520,17-2171 
+"Engineers, all other",1530,17-2199 
+Drafters,1540,17-3010 
+"Engineering technicians, except drafters",1550,17-3020 
+Surveying and mapping technicians,1560,17-3031 
+,,
+"Life, Physical, and Social Science Occupations:",1600-1965,19-0000
+,,
+Agricultural and food scientists,1600,19-1010
+Biological scientists,1610,19-1020 
+Conservation scientists and foresters,1640,19-1030 
+Medical scientists,1650,19-1040 
+"Life scientists, all other",1660,19-1099
+Astronomers and physicists,1700,19-2010 
+Atmospheric and space scientists,1710,19-2021 
+Chemists and materials scientists,1720,19-2030 
+Environmental scientists and geoscientists,1740,19-2040 
+"Physical scientists, all other",1760,19-2099 
+Economists,1800,19-3011 
+Survey researchers,1815,19-3022 
+Psychologists,1820,19-3030 
+Sociologists,1830,19-3041 
+Urban and regional planners,1840,19-3051 
+Miscellaneous social scientists and related workers,1860,19-3090
+Agricultural and food science technicians,1900,19-4011
+Biological technicians,1910,19-4021
+Chemical technicians,1920,19-4031
+Geological and petroleum technicians,1930,19-4041
+Nuclear technicians,1940,19-4051
+Social science research assistants,1950,19-4061
+"Miscellaneous life, physical, and social science technicians",1965,19-4090
+,,
+"Education, Legal, Community Service, Arts, and Media Occupations:",2000-2960,21-0000 - 27-0000
+,,
+Community and Social Service Occupations:,2000-2060,21-0000
+,,
+Counselors,2000,21-1010
+Social workers,2010,21-1020
+Probation officers and correctional treatment specialists,2015,21-1092
+Social and human service assistants,2016,21-1093
+"Miscellaneous community and social service specialists, including health educators and community health workers",2025,21-109X
+Clergy,2040,21-2011
+"Directors, religious activities and education",2050,21-2021
+"Religious workers, all other",2060,21-2099 
+,,
+Legal Occupations:,2100-2160,23-0000
+,,
+Lawyers,2100,23-1011 
+Judicial law clerks,2105,23-1012
+"Judges, magistrates, and other judicial workers",2110,23-1020
+Paralegals and legal assistants,2145,23-2011
+Miscellaneous legal support workers,2160,23-2090
+,,
+"Education, Training, and Library Occupations:",2200-2550,25-0000
+,,
+Postsecondary teachers,2200,25-1000
+Preschool and kindergarten teachers,2300,25-2010 
+Elementary and middle school teachers,2310,25-2020 
+Secondary school teachers,2320,25-2030 
+Special education teachers,2330,25-2050 
+Other teachers and instructors,2340,25-3000
+"Archivists, curators, and museum technicians",2400,25-4010
+Librarians,2430,25-4021
+Library technicians,2440,25-4031
+Teacher assistants,2540,25-9041 
+"Other education, training, and library workers",2550,25-90XX
+,,
+"Arts, Design, Entertainment, Sports, and Media Occupations:",2600-2960,27-0000
+,,
+Artists and related workers,2600,27-1010 
+Designers,2630,27-1020 
+Actors,2700,27-2011
+Producers and directors,2710,27-2012
+"Athletes, coaches, umpires, and related workers",2720,27-2020
+Dancers and choreographers,2740,27-2030
+"Musicians, singers, and related workers",2750,27-2040
+"Entertainers and performers, sports and related workers, all other",2760,27-2099
+Announcers,2800,27-3010
+"News analysts, reporters and correspondents",2810,27-3020
+Public relations specialists,2825,27-3031
+Editors,2830,27-3041
+Technical writers,2840,27-3042
+Writers and authors,2850,27-3043
+Miscellaneous media and communication workers,2860,27-3090
+Broadcast and sound engineering technicians and radio operators,2900,27-4010
+Photographers,2910,27-4021
+"Television, video, and motion picture camera operators and editors",2920,27-4030
+"Media and communication equipment workers, all other",2960,27-4099
+,,
+Healthcare Practitioners and Technical Occupations:,3000-3540,29-0000
+,,
+Chiropractors,3000,29-1011
+Dentists,3010,29-1020 
+Dietitians and nutritionists,3030,29-1031
+Optometrists,3040,29-1041
+Pharmacists,3050,29-1051
+Physicians and surgeons,3060,29-1060 
+Physician assistants,3110,29-1071
+Podiatrists,3120,29-1081
+Audiologists,3140,29-1181
+Occupational therapists,3150,29-1122
+Physical therapists,3160,29-1123 
+Radiation therapists,3200,29-1124
+Recreational therapists,3210,29-1125
+Respiratory therapists,3220,29-1126
+Speech-language pathologists,3230,29-1127
+Exercise physiologists,3235,29-1128
+"Therapists, all other",3245,29-1129
+Veterinarians,3250,29-1131
+Registered nurses,3255,29-1141
+Nurse anesthetists,3256,29-1151
+Nurse midwives,3257,29-1161
+Nurse practitioners,3258,29-1171
+"Health diagnosing and treating practitioners, all other",3260,29-1199 
+Clinical laboratory technologists and technicians,3300,29-2010
+Dental hygienists,3310,29-2021
+Diagnostic related technologists and technicians,3320,29-2030 
+Emergency medical technicians and paramedics,3400,29-2041
+Health practitioner support technologists and technicians,3420,29-2050 
+Licensed practical and licensed vocational nurses,3500,29-2061
+Medical records and health information technicians,3510,29-2071
+"Opticians, dispensing",3520,29-2081
+Miscellaneous health technologists and technicians,3535,29-2090
+Other healthcare practitioners and technical occupations,3540,29-9000
+,,
+,3600-4650,31-0000 - 39-0000
+,,
+Healthcare Support Occupations:,3600-3655,31-0000
+,,
+"Nursing, psychiatric, and home health aides",3600,31-1010
+Occupational therapy assistants and aides,3610,31-2010
+Physical therapist assistants and aides,3620,31-2020
+Massage therapists,3630,31-9011
+Dental assistants,3640,31-9091
+Medical assistants,3645,31-9092
+Medical transcriptionists,3646,31-9094
+Pharmacy aides,3647,31-9095
+Veterinary assistants and laboratory animal caretakers,3648,31-9096
+Phlebotomists,3649,31-9097
+"Healthcare support workers, all other, including medical equipment preparers",3655,31-909X
+,,
+Protective Service Occupations:,3700-3955,33-0000
+,,
+First-line supervisors of correctional officers,3700,33-1011
+First-line supervisors of police and detectives,3710,33-1012 
+First-line supervisors of fire fighting and prevention workers,3720,33-1021
+"First-line supervisors of protective service workers, all other",3730,33-1099
+Firefighters,3740,33-2011
+Fire inspectors,3750,33-2020 
+"Bailiffs, correctional officers, and jailers",3800,33-3010 
+Detectives and criminal investigators,3820,33-3021
+Fish and game wardens,3830,33-3031
+Parking enforcement workers,3840,33-3041
+Police and sheriff's patrol officers,3850,33-3051
+Transit and railroad police,3860,33-3052 
+Animal control workers,3900,33-9011
+Private detectives and investigators,3910,33-9021
+Security guards and gaming surveillance officers,3930,33-9030 
+Crossing guards,3940,33-9091
+Transportation security screeners,3945,33-9093
+"Lifeguards and other recreational, and all other protective service workers",3955,33-909X
+,,
+Food Preparation and Serving Related Occupations:,4000-4160,35-0000
+,,
+Chefs and head cooks,4000,35-1011
+First-line supervisors of food preparation and serving workers,4010,35-1012
+Cooks,4020,35-2010
+Food preparation workers,4030,35-2021
+Bartenders,4040,35-3011
+"Combined food preparation and serving workers, including fast food",4050,35-3021
+"Counter attendants, cafeteria, food concession, and coffee shop",4060,35-3022
+Waiters and waitresses,4110,35-3031
+"Food servers, nonrestaurant",4120,35-3041
+Dining room and cafeteria attendants and bartender helpers,4130,35-9011
+Dishwashers,4140,35-9021
+"Hosts and hostesses, restaurant, lounge, and coffee shop",4150,35-9031
+"Food preparation and serving related workers, all other",4160,35-9099
+,,
+Building and Grounds Cleaning and Maintenance Occupations:,4200-4250,37-0000
+,,
+First-line supervisors of housekeeping and janitorial workers,4200,37-1011
+"First-line supervisors of landscaping, lawn service, and groundskeeping workers",4210,37-1012
+Janitors and building cleaners,4220,37-201X
+Maids and housekeeping cleaners,4230,37-2012
+Pest control workers,4240,37-2021
+Grounds maintenance workers,4250,37-3010
+,,
+Personal Care and Service Occupations:,4300-4650,39-0000
+,,
+First-line supervisors of gaming workers,4300,39-1010
+First-line supervisors of personal service workers,4320,39-1021 
+Animal trainers,4340,39-2011
+Nonfarm animal caretakers,4350,39-2021
+Gaming services workers,4400,39-3010
+Motion picture projectionists,4410,39-3021
+"Ushers, lobby attendants, and ticket takers",4420,39-3031
+Miscellaneous entertainment attendants and related workers,4430,39-3090 
+Embalmers and funeral attendants,4460,  39-40XX
+"Morticians, undertakers, and funeral directors",4465,39-4031
+Barbers,4500,39-5011
+"Hairdressers, hairstylists, and cosmetologists",4510,39-5012
+Miscellaneous personal appearance workers,4520,39-5090
+"Baggage porters, bellhops, and concierges",4530,39-6010
+Tour and travel guides,4540,39-7010
+Childcare workers,4600,39-9011
+Personal care aides,4610,39-9021
+Recreation and fitness workers,4620,39-9030
+Residential advisors,4640,39-9041
+"Personal care and service workers, all other ",4650,39-9099
+,,
+,4700-5940,41-0000 - 43-0000
+,,
+Sales and Related Occupations:,4700-4965,41-0000
+,,
+First-line supervisors of retail sales workers,4700,41-1011
+First-line supervisors of non-retail sales workers,4710,41-1012
+Cashiers,4720,41-2010
+Counter and rental clerks,4740,41-2021
+Parts salespersons,4750,41-2022
+Retail salespersons,4760,41-2031
+Advertising sales agents,4800,41-3011
+Insurance sales agents,4810,41-3021
+"Securities, commodities, and financial services sales agents",4820,41-3031
+Travel agents,4830,41-3041
+"Sales representatives, services, all other",4840,41-3099
+"Sales representatives, wholesale and manufacturing",4850,41-4010 
+"Models, demonstrators, and product promoters",4900,41-9010 
+Real estate brokers and sales agents,4920,41-9020
+Sales engineers,4930,41-9031
+Telemarketers,4940,41-9041
+"Door-to-door sales workers, news and street vendors, and related workers",4950,41-9091
+"Sales and related workers, all other",4965,41-9099
+,,
+Office and Administrative Support Occupations:,5000-5940,43-0000
+,,
+First-line supervisors of office and administrative support workers,5000,43-1011 
+"Switchboard operators, including answering service",5010,43-2011
+Telephone operators,5020,43-2021
+"Communications equipment operators, all other",5030,43-2099
+Bill and account collectors,5100,43-3011
+Billing and posting clerks ,5110,43-3021
+"Bookkeeping, accounting, and auditing clerks",5120,43-3031
+Gaming cage workers,5130,43-3041
+Payroll and timekeeping clerks,5140,43-3051
+Procurement clerks,5150,43-3061
+Tellers,5160,43-3071
+"Financial clerks, all other",5165,43-3099
+Brokerage clerks,5200,43-4011
+Correspondence clerks,5210,43-4021
+"Court, municipal, and license clerks",5220,43-4031
+"Credit authorizers, checkers, and clerks",5230,43-4041
+Customer service representatives,5240,43-4051
+"Eligibility interviewers, government programs",5250,43-4061 
+File clerks,5260,43-4071 
+"Hotel, motel, and resort desk clerks",5300,43-4081
+"Interviewers, except eligibility and loan",5310,43-4111
+"Library assistants, clerical",5320,43-4121
+Loan interviewers and clerks,5330,43-4131
+New accounts clerks,5340,43-4141
+Order clerks,5350,43-4151
+"Human resources assistants, except payroll and timekeeping",5360,43-4161 
+Receptionists and information clerks,5400,43-4171
+Reservation and transportation ticket agents and travel clerks,5410,43-4181
+"Information and record clerks, all other",5420,43-4199 
+Cargo and freight agents,5500,43-5011
+Couriers and messengers,5510,43-5021
+Dispatchers,5520,43-5030
+"Meter readers, utilities",5530,43-5041
+Postal service clerks,5540,43-5051
+Postal service mail carriers,5550,43-5052
+"Postal service mail sorters, processors, and processing machine operators",5560,43-5053 
+"Production, planning, and expediting clerks",5600,43-5061
+"Shipping, receiving, and traffic clerks",5610,43-5071
+Stock clerks and order fillers,5620,43-5081
+"Weighers, measurers, checkers, and samplers, recordkeeping",5630,43-5111 
+Secretaries and administrative assistants,5700,43-6010 
+Computer operators,5800,43-9011
+Data entry keyers,5810,43-9021
+Word processors and typists,5820,43-9022
+Desktop publishers,5830,43-9031
+Insurance claims and policy processing clerks,5840,43-9041
+"Mail clerks and mail machine operators, except postal service",5850,43-9051
+"Office clerks, general",5860,43-9061 
+"Office machine operators, except computer",5900, 43-9071
+Proofreaders and copy markers,5910,43-9081
+Statistical assistants,5920,43-9111
+"Office and administrative support workers, all other",5940,43-9199 
+,,
+,6005-7630,45-0000 - 49-0000
+,,
+"Farming, Fishing, and Forestry Occupations:",6005-6130,45-0000
+,,
+"First-line supervisors of farming, fishing, and forestry workers",6005,45-1011  
+Agricultural inspectors,6010,45-2011
+Animal breeders,6020,45-2021 
+"Graders and sorters, agricultural products",6040,45-2041
+Miscellaneous agricultural workers ,6050,45-2090
+Fishers and related fishing workers,6100,45-3011
+Hunters and trappers,6110,45-3021
+Forest and conservation workers,6120,45-4011
+Logging workers,6130,45-4020
+,,
+Construction and Extraction Occupations:,6200-6940,47-0000
+,,
+First-line supervisors of construction trades and extraction workers,6200,47-1011
+Boilermakers,6210,47-2011 
+"Brickmasons, blockmasons, and stonemasons",6220,47-2020 
+Carpenters,6230,47-2031 
+"Carpet, floor, and tile installers and finishers",6240,47-2040 
+"Cement masons, concrete finishers, and terrazzo workers",6250,47-2050 
+Construction laborers,6260,47-2061
+"Paving, surfacing, and tamping equipment operators",6300,47-2071 
+Pile-driver operators,6310,47-2072 
+Operating engineers and other construction equipment operators,6320,47-2073 
+"Drywall installers, ceiling tile installers, and tapers",6330,47-2080
+Electricians,6355,47-2111
+Glaziers,6360,47-2121
+Insulation workers,6400,47-2130
+"Painters, construction and maintenance",6420,47-2141
+Paperhangers,6430,47-2142
+"Pipelayers, plumbers, pipefitters, and steamfitters",6440,47-2150
+Plasterers and stucco masons,6460,47-2161
+Reinforcing iron and rebar workers,6500,47-2171 
+Roofers,6515,47-2181 
+Sheet metal workers,6520,47-2211 
+Structural iron and steel workers,6530,47-2221
+Solar photovoltaic installers,6540,47-2231
+"Helpers, construction trades",6600,47-3010
+Construction and building inspectors,6660,47-4011
+Elevator installers and repairers,6700,47-4021 
+Fence erectors,6710,47-4031 
+Hazardous materials removal workers,6720,47-4041 
+Highway maintenance workers,6730,47-4051 
+Rail-track laying and maintenance equipment operators,6740,47-4061 
+Septic tank servicers and sewer pipe cleaners,6750,47-4071 
+Miscellaneous construction and related workers,6765,47-4090
+"Derrick, rotary drill, and service unit operators, oil, gas, and mining",6800,47-5010 
+"Earth drillers, except oil and gas",6820,47-5021
+"Explosives workers, ordnance handling experts, and blasters",6830,47-5031 
+Mining machine operators,6840,47-5040
+"Roof bolters, mining",6910,47-5061 
+"Roustabouts, oil and gas",6920,47-5071 
+Helpers--extraction workers,6930,47-5081 
+Other extraction workers,6940,47-50XX
+,,
+"Installation, Maintenance, and Repair Occupations:",7000-7630,49-0000
+,,
+"First-line supervisors of mechanics, installers, and repairers",7000,49-1011
+"Computer, automated teller, and office machine repairers",7010,49-2011
+Radio and telecommunications equipment installers and repairers,7020,49-2020
+Avionics technicians,7030,49-2091
+"Electric motor, power tool, and related repairers",7040,49-2092
+"Electrical and electronics installers and repairers, transportation equipment",7050,49-2093
+"Electrical and electronics repairers, industrial and utility",7100,49-209X
+"Electronic equipment installers and repairers, motor vehicles",7110,49-2096
+Electronic home entertainment equipment installers and repairers,7120,49-2097
+Security and fire alarm systems installers,7130,49-2098
+Aircraft mechanics and service technicians,7140,49-3011
+Automotive body and related repairers,7150,49-3021
+Automotive glass installers and repairers,7160,49-3022 
+Automotive service technicians and mechanics,7200,49-3023
+Bus and truck mechanics and diesel engine specialists,7210,49-3031
+Heavy vehicle and mobile equipment service technicians and mechanics,7220,49-3040 
+Small engine mechanics,7240,49-3050 
+"Miscellaneous vehicle and mobile equipment mechanics, installers, and repairers",7260,49-3090 
+Control and valve installers and repairers,7300,49-9010
+"Heating, air conditioning, and refrigeration mechanics and installers",7315,49-9021
+Home appliance repairers,7320,49-9031
+Industrial and refractory machinery mechanics,7330,49-904X
+"Maintenance and repair workers, general",7340,49-9071
+"Maintenance workers, machinery",7350,49-9043
+Millwrights,7360,49-9044
+Electrical power-line installers and repairers,7410,49-9051
+Telecommunications line installers and repairers,7420,49-9052
+Precision instrument and equipment repairers,7430,49-9060
+Wind turbine service technicians,7440,49-9081
+"Coin, vending, and amusement machine servicers and repairers",7510,49-9091
+Commercial divers,7520,49-9092
+Locksmiths and safe repairers,7540,49-9094
+Manufactured building and mobile home installers,7550,49-9095
+Riggers,7560,49-9096
+Signal and track switch repairers,7600,49-9097
+"Helpers--installation, maintenance, and repair workers ",7610,49-9098
+"Other installation, maintenance, and repair workers",7630,49-909X
+,,
+,7700-9750,51-0000 - 53-0000
+,,
+Production Occupations:,7700-8965,51-0000
+,,
+First-line supervisors of production and operating workers,7700,51-1011
+"Aircraft structure, surfaces, rigging, and systems assemblers",7710,51-2011 
+"Electrical, electronics, and electromechanical assemblers",7720,51-2020 
+Engine and other machine assemblers,7730,51-2031 
+Structural metal fabricators and fitters,7740,51-2041 
+Miscellaneous assemblers and fabricators,7750,51-2090
+Bakers,7800,51-3011
+"Butchers and other meat, poultry, and fish processing workers",7810,51-3020
+"Food and tobacco roasting, baking, and drying machine operators and tenders",7830,51-3091
+Food batchmakers,7840,51-3092
+Food cooking machine operators and tenders,7850,51-3093
+"Food processing workers, all other",7855,51-3099
+Computer control programmers and operators,7900,51-4010
+"Extruding and drawing machine setters, operators, and tenders, metal and plastic",7920,51-4021
+"Forging machine setters, operators, and tenders, metal and plastic",7930,51-4022
+"Rolling machine setters, operators, and tenders, metal and plastic",7940,51-4023
+"Cutting, punching, and press machine setters, operators, and tenders, metal and plastic",7950,51-4031
+"Drilling and boring machine tool setters, operators, and tenders, metal and plastic ",7960,51-4032
+"Grinding, lapping, polishing, and buffing machine tool setters, operators, and tenders, metal and plastic",8000,51-4033
+"Lathe and turning machine tool setters, operators, and tenders, metal and plastic",8010,51-4034
+"Milling and planing machine setters, operators, and tenders, metal and plastic",8020,51-4035
+Machinists,8030,51-4041
+"Metal furnace operators, tenders, pourers, and casters",8040,51-4050
+"Model makers and patternmakers, metal and plastic",8060,51-4060
+"Molders and molding machine setters, operators, and tenders, metal and plastic",8100,51-4070
+"Multiple machine tool setters, operators, and tenders, metal and plastic ",8120,51-4081
+Tool and die makers,8130,51-4111
+"Welding, soldering, and brazing workers",8140,51-4120
+"Heat treating equipment setters, operators, and tenders, metal and plastic",8150,51-4191
+"Layout workers, metal and plastic",8160,51-4192
+"Plating and coating machine setters, operators, and tenders, metal and plastic",8200,51-4193
+"Tool grinders, filers, and sharpeners",8210,51-4194
+"Metal workers and plastic workers, all other",8220,51-4199
+Prepress technicians and workers,8250,51-5111
+Printing press operators,8255,51-5112 
+Print binding and finishing workers,8256,51-5113 
+Laundry and dry-cleaning workers,8300,51-6011
+"Pressers, textile, garment, and related materials",8310,51-6021
+Sewing machine operators,8320,51-6031
+Shoe and leather workers and repairers,8330,51-6041
+Shoe machine operators and tenders,8340,51-6042
+"Tailors, dressmakers, and sewers",8350,51-6050
+Textile bleaching and dyeing machine operators and tenders,8360,51-6061
+"Textile cutting machine setters, operators, and tenders",8400,51-6062
+"Textile knitting and weaving machine setters, operators, and tenders",8410,51-6063
+"Textile winding, twisting, and drawing out machine setters, operators, and tenders",8420,51-6064
+"Extruding and forming machine setters, operators, and tenders, synthetic and glass fibers",8430,51-6091
+Fabric and apparel patternmakers,8440,51-6092
+Upholsterers,8450,51-6093
+"Textile, apparel, and furnishings workers, all other",8460,51-6099
+Cabinetmakers and bench carpenters,8500,51-7011
+Furniture finishers,8510,51-7021
+"Model makers and patternmakers, wood",8520,51-7030
+"Sawing machine setters, operators, and tenders, wood",8530,51-7041
+"Woodworking machine setters, operators, and tenders, except sawing",8540,51-7042
+"Woodworkers, all other",8550,51-7099
+"Power plant operators, distributors, and dispatchers",8600,51-8010
+Stationary engineers and boiler operators,8610,51-8021
+Water and wastewater treatment plant and system operators,8620,51-8031
+Miscellaneous plant and system operators,8630,51-8090
+"Chemical processing machine setters, operators, and tenders",8640,51-9010
+"Crushing, grinding, polishing, mixing, and blending workers",8650,51-9020
+Cutting workers,8710,51-9030
+"Extruding, forming, pressing, and compacting machine setters, operators, and tenders",8720,51-9041
+"Furnace, kiln, oven, drier, and kettle operators and tenders",8730,51-9051
+"Inspectors, testers, sorters, samplers, and weighers",8740,51-9061
+Jewelers and precious stone and metal workers,8750,51-9071
+"Medical, dental, and ophthalmic laboratory technicians",8760,51-9080
+Packaging and filling machine operators and tenders,8800,51-9111
+Painting workers,8810,51-9120
+Photographic process workers and processing machine operators,8830,51-9151
+Semiconductor processors,8840,51-9141
+Adhesive bonding machine operators and tenders,8850,51-9191
+"Cleaning, washing, and metal pickling equipment operators and tenders",8860,51-9192
+Cooling and freezing equipment operators and tenders,8900,51-9193
+Etchers and engravers,8910,51-9194
+"Molders, shapers, and casters, except metal and plastic",8920,51-9195
+"Paper goods machine setters, operators, and tenders",8930,51-9196
+Tire builders,8940,51-9197
+Helpers--production workers,8950,51-9198
+"Production workers, all other",8965,51-9199
+,,
+Transportation and Material Moving Occupations:,9000-9750,53-0000
+,,
+Transportation Occupations:,9000-9420,53-1000 - 53-6000
+,,
+Supervisors of transportation and material moving workers,9000,53-1000 
+Aircraft pilots and flight engineers,9030,53-2010
+Air traffic controllers and airfield operations specialists,9040,53-2020 
+Flight attendants,9050,53-2031
+"Ambulance drivers and attendants, except emergency medical technicians",9110,53-3011
+Bus drivers,9120,53-3020
+Driver/sales workers and truck drivers,9130,53-3030
+Taxi drivers and chauffeurs,9140,53-3041
+"Motor vehicle operators, all other",9150,53-3099 
+Locomotive engineers and operators,9200,53-4010 
+"Railroad brake, signal, and switch operators",9230,53-4021
+Railroad conductors and yardmasters,9240,53-4031 
+"Subway, streetcar, and other rail transportation workers",9260,53-40XX
+Sailors and marine oilers,9300,53-5011
+Ship and boat captains and operators,9310,53-5020 
+Ship engineers,9330,53-5031
+Bridge and lock tenders,9340,53-6011
+Parking lot attendants,9350,53-6021
+Automotive and watercraft service attendants   ,9360,53-6031 
+Transportation inspectors,9410,53-6051
+"Transportation attendants, except flight attendants",9415,53-6061
+Other transportation workers ,9420,53-60XX
+,,
+Material Moving Occupations:,9500-9750,53-7000
+,,
+Conveyor operators and tenders,9500,53-7011
+Crane and tower operators,9510,53-7021
+"Dredge, excavating, and loading machine operators",9520,53-7030 
+Hoist and winch operators,9560,53-7041 
+Industrial truck and tractor operators,9600,53-7051
+Cleaners of vehicles and equipment,9610,53-7061
+"Laborers and freight, stock, and material movers, hand",9620,53-7062
+Machine feeders and offbearers,9630,53-7063
+"Packers and packagers, hand",9640,53-7064
+Pumping station operators,9650,53-7070 
+Refuse and recyclable material collectors,9720,53-7081
+Mine shuttle car operators,9730,53-7111
+"Tank car, truck, and ship loaders",9740,53-7121
+"Material moving workers, all other",9750,53-7199 
+,,
+,9800-9830,55-0000
+,,
+Military officer special and tactical operations leaders,9800,55-1010
+First-line enlisted military supervisors,9810,55-2010
+Military enlisted tactical operations and air/weapons specialists and crew members,9820,55-3010
+"Military, rank not specified",9830,none
+,,
+"Unemployed, with no work experience in the last 5 years or earlier or never worked",9920,none
+,,
+,,
+,,
+,,
